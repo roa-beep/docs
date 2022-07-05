@@ -15,14 +15,12 @@
 const sidebars = {
 	tutorial: [
 		'intro',
-		apiCategory('api-auth', 'Auth API', require('./docs/api-auth/sidebar.js')),
 		apiCategory('api-chat', 'Chat API', require('./docs/api-chat/sidebar.js')),
 		apiCategory('api-cloud', 'Cloud API', require('./docs/api-cloud/sidebar.js')),
 		apiCategory('api-group', 'Group API', require('./docs/api-group/sidebar.js')),
 		apiCategory('api-identity', 'Identity API', require('./docs/api-identity/sidebar.js')),
 		apiCategory('api-kv', 'KV API', require('./docs/api-kv/sidebar.js')),
 		apiCategory('api-party', 'Party API', require('./docs/api-party/sidebar.js')),
-		apiCategory('api-portal', 'Portal API', require('./docs/api-portal/sidebar.js')),
 		apiCategory('api-matchmaker', 'Matchmaker API', require('./docs/api-matchmaker/sidebar.js'))
 	]
 };
@@ -39,23 +37,6 @@ function apiCategory(name, label, items) {
 		items: combineTags(items)
 	};
 }
-
-// function apiCategory(name, label, items) {
-// 	return {
-// 		[name]: [
-// 			{
-// 				type: 'category',
-// 				label: label,
-// 				link: {
-// 					type: 'generated-index',
-// 					title: label,
-// 					slug: `/category/${name}`
-// 				},
-// 				items: combineTags(items)
-// 			}
-// 		]
-// 	};
-// }
 
 function combineTags(obj) {
 	return filterUnique(

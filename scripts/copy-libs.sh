@@ -4,8 +4,8 @@ set -euf
 rm -rf spec
 mkdir -p spec
 
-# Generate and copy serivces
-for api in auth chat cloud group identity kv party portal matchmaker; do
+# Copy serivces
+for api in chat cloud group identity kv party matchmaker; do
 	path=../backend/gen/svc/api-$api/smithy/openapi/.
 
 	if [ -d "$path" ]; then

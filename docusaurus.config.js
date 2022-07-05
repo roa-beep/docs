@@ -62,14 +62,12 @@ const config = {
 				id: 'openapi',
 				docsPluginId: 'classic',
 				config: {
-					...apiConfig('api-auth', 'AuthService'),
 					...apiConfig('api-chat', 'ChatService'),
 					...apiConfig('api-cloud', 'CloudService'),
 					...apiConfig('api-group', 'GroupService'),
 					...apiConfig('api-identity', 'IdentityService'),
 					...apiConfig('api-kv', 'KvService'),
 					...apiConfig('api-party', 'PartyService'),
-					...apiConfig('api-portal', 'PortalService'),
 					...apiConfig('api-matchmaker', 'MatchmakerService')
 				}
 			}
