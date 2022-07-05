@@ -33,11 +33,14 @@ const config = {
 			/** @type {import('@docusaurus/preset-classic').Options} */
 			({
 				docs: {
+					routeBasePath: '/',
 					sidebarPath: require.resolve('./sidebars.js'),
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
 					editUrl:
-						'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/'
+						'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+					docLayoutComponent: '@theme/DocPage',
+					docItemComponent: '@theme/ApiItem' // Derived from docusaurus-theme-openapi-docs
 				},
 				blog: {
 					showReadingTime: true,
@@ -52,6 +55,28 @@ const config = {
 			})
 		]
 	],
+
+	plugins: [
+		[
+			'docusaurus-plugin-openapi-docs',
+			{
+				id: 'openapi',
+				docsPluginId: 'classic',
+				config: {
+					...apiConfig('api-auth', 'AuthService'),
+					...apiConfig('api-chat', 'ChatService'),
+					...apiConfig('api-cloud', 'CloudService'),
+					...apiConfig('api-group', 'GroupService'),
+					...apiConfig('api-identity', 'IdentityService'),
+					...apiConfig('api-kv', 'KvService'),
+					...apiConfig('api-party', 'PartyService'),
+					...apiConfig('api-portal', 'PortalService'),
+					...apiConfig('api-matchmaker', 'MatchmakerService')
+				}
+			}
+		]
+	],
+	themes: ['docusaurus-theme-openapi-docs'],
 
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -128,5 +153,18 @@ const config = {
 			}
 		})
 };
+
+function apiConfig(name, service) {
+	return {
+		[name]: {
+			specPath: `spec/${service}.openapi.json`,
+			outputDir: `docs/${name}`,
+			sidebarOptions: {
+				groupPathsBy: 'tag',
+				categoryLinkSource: 'tag'
+			}
+		}
+	};
+}
 
 module.exports = config;
