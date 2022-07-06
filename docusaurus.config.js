@@ -96,6 +96,12 @@ const config = {
 						href: 'https://github.com/facebook/docusaurus',
 						label: 'GitHub',
 						position: 'right'
+					},
+					{
+						label: 'TypeScript Identity API',
+						position: 'left',
+						to: '/typescript/api-identity/index.html',
+						target: '_blank'
 					}
 				]
 			},
