@@ -100,7 +100,7 @@ const config = {
 					{
 						label: 'TypeScript Identity API',
 						position: 'left',
-						to: '/typescript/api-identity/index.html',
+						to: '/lib/api-identity/typescript/index.html',
 						target: '_blank'
 					}
 				]
