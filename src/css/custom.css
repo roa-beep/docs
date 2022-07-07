@@ -6,34 +6,50 @@
 
 /* You can override the default Infima variables here. */
 :root {
-	--ifm-color-primary: #2e8555;
-	--ifm-color-primary-dark: #29784c;
-	--ifm-color-primary-darker: #277148;
-	--ifm-color-primary-darkest: #205d3b;
-	--ifm-color-primary-light: #33925d;
-	--ifm-color-primary-lighter: #359962;
-	--ifm-color-primary-lightest: #3cad6e;
+	--ifm-color-primary: #6862d3;
+	--ifm-color-primary-dark: #524ccd;
+	--ifm-color-primary-darker: #3f38c7;
+	--ifm-color-primary-darkest: #3932b3;
+	--ifm-color-primary-light: #7974d8;
+	--ifm-color-primary-lighter: #8c88dd;
+	--ifm-color-primary-lightest: #9f9ce3;
 	--ifm-code-font-size: 95%;
 	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
+	--ifm-color-white: #ececec;
+	--ifm-color-black: #151515;
 	--ifm-font-family-monospace: 'Fira Code', monospace;
 	--ifm-font-size-base: 95%;
 	--ifm-code-font-size: 90%;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-	--ifm-color-primary: #25c2a0;
-	--ifm-color-primary-dark: #21af90;
-	--ifm-color-primary-darker: #1fa588;
-	--ifm-color-primary-darkest: #1a8870;
-	--ifm-color-primary-light: #29d5b0;
-	--ifm-color-primary-lighter: #32d8b4;
-	--ifm-color-primary-lightest: #4fddbf;
+html[data-theme='dark'] {
+	--ifm-raised-bg: #ffffff17;
+	--ifm-color-primary: #6762c2;
+	--ifm-color-primary-dark: #4f49b8;
+	--ifm-color-primary-darker: #413bb3;
+	--ifm-color-primary-darkest: #37329e;
+	--ifm-color-primary-light: #7672ca;
+	--ifm-color-primary-lighter: #8582cc;
+	--ifm-color-primary-lightest: #9d9ad4;
 	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
-	--ifm-font-color-base: #ececec;
-	--ifm-color-gray-500: #5f5f5f;
+	--ifm-background-color: #151515;
+	--ifm-toc-border-color: var(--ifm-raised-bg);
+	--ifm-background-surface-color: var(--ifm-raised-bg);
+	--ifm-navbar-background-color: var(--ifm-background-color);
+
+	--openapi-code-dim-dark: var(--ifm-raised-bg);
+
+	--ifm-font-color-base: #d8d8d8;
+	--ifm-menu-color: #dbdbdb;
+	--ifm-color-gray-500: var(--ifm-raised-bg);
+	--ifm-hr-background-color: var(--ifm-raised-bg);
+}
+
+.footer--dark {
+	--ifm-footer-background-color: #242526;
 }
 
 /* Sidebar Method labels */
@@ -146,4 +162,20 @@ html[data-theme='dark'] .header-github-link:before {
 .navbar__inner {
 	max-width: 1360px;
 	margin: 0 auto;
+}
+
+/* Response code buttons */
+html[data-theme='dark']
+	li.tabItem_node_modules-docusaurus-theme-openapi-docs-lib-next-theme-ApiTabs-styles-module {
+	color: var(--ifm-font-color-base);
+}
+
+html[data-theme='dark']
+	li.tabItem_node_modules-docusaurus-theme-openapi-docs-lib-next-theme-ApiTabs-styles-module:hover {
+	color: var(--ifm-font-color-base) !important;
+}
+
+/* Removes weird line in the top left corner */
+div.theme-api-markdown li::before {
+	content: none;
 }

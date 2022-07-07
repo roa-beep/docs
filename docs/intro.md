@@ -2,46 +2,18 @@
 sidebar_position: 1
 ---
 
-# Hello, Rivet!
+# Documentation Overview
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## TypeScript Client Docs
 
-## Getting Started
+#### <a href="/lib/api-chat/typescript/index.html" target="_blank">Chat API</a>
 
-Get started by **creating a new site**.
+#### <a href="/lib/api-cloud/typescript/index.html" target="_blank">Cloud API</a>
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+#### <a href="/lib/api-group/typescript/index.html" target="_blank">Group API</a>
 
-### What you'll need
+#### <a href="/lib/api-identity/typescript/index.html" target="_blank">Identity API</a>
 
-- [Node.js](https://nodejs.org/en/download/) version 14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+#### <a href="/lib/api-kv/typescript/index.html" target="_blank">KV API</a>
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+#### <a href="/lib/api-party/typescript/index.html" target="_blank">Party API</a>
