@@ -4,12 +4,12 @@
 	"private": true,
 	"scripts": {
 		"docusaurus": "docusaurus",
-		"start": "yarn docusaurus clean-api-docs all && docusaurus gen-api-docs all && PORT=6600 docusaurus start",
+		"start": "docusaurus clean-api-docs all && docusaurus gen-api-docs all && docusaurus start --port 6600",
 		"build": "docusaurus build",
 		"swizzle": "docusaurus swizzle",
 		"deploy": "docusaurus deploy",
 		"clear": "docusaurus clear",
-		"serve": "PORT=6600 docusaurus serve",
+		"serve": "docusaurus serve --port 6600",
 		"write-translations": "docusaurus write-translations",
 		"write-heading-ids": "docusaurus write-heading-ids",
 		"typecheck": "tsc"
