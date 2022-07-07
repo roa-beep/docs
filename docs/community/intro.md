@@ -1,8 +1,5 @@
----
-sidebar_position: 1
----
-
 # Community
 
-TODO
+- [Discord](https://discord.gg/5SUXvP9A)
+- [Twitter](https://twitter.com/RivetOfficial)
 
