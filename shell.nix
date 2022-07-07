@@ -3,7 +3,9 @@
 pkgs.mkShell {
 	buildInputs = with pkgs; [
 		nodejs-16_x
-		yarn
+		(pkgs.yarn.override {
+			nodejs = pkgs.nodejs-16_x;
+		})
 	];
 }
 
