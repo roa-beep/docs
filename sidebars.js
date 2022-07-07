@@ -13,8 +13,11 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-	guides: [
-		'guides/intro',
+	tutorials: [
+		'tutorials/intro',
+	],
+	concepts: [
+		'concepts/intro',
 	],
 	api: [
 		'api/intro',
