@@ -37,7 +37,9 @@ const config = {
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
 					editUrl:
-						'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/'
+						'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+					docLayoutComponent: '@theme/DocPage',
+					docItemComponent: '@theme/ApiItem'
 				},
 				blog: {
 					showReadingTime: true,
@@ -52,6 +54,26 @@ const config = {
 			})
 		]
 	],
+
+	plugins: [
+		[
+			'docusaurus-plugin-openapi-docs',
+			{
+				id: 'openapi',
+				docsPluginId: 'classic',
+				config: {
+					...apiConfig('api-chat', 'ChatService'),
+					...apiConfig('api-cloud', 'CloudService'),
+					...apiConfig('api-group', 'GroupService'),
+					...apiConfig('api-identity', 'IdentityService'),
+					...apiConfig('api-kv', 'KvService'),
+					...apiConfig('api-party', 'PartyService'),
+					...apiConfig('api-matchmaker', 'MatchmakerService')
+				}
+			}
+		]
+	],
+	themes: ['docusaurus-theme-openapi-docs'],
 
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -74,6 +96,12 @@ const config = {
 						href: 'https://github.com/facebook/docusaurus',
 						label: 'GitHub',
 						position: 'right'
+					},
+					{
+						label: 'TypeScript Identity API',
+						position: 'left',
+						to: '/typescript/api-identity/index.html',
+						target: '_blank'
 					}
 				]
 			},
@@ -128,5 +156,18 @@ const config = {
 			}
 		})
 };
+
+function apiConfig(name, service) {
+	return {
+		[name]: {
+			specPath: `spec/${service}.openapi.json`,
+			outputDir: `docs/${name}`,
+			sidebarOptions: {
+				groupPathsBy: 'tag',
+				categoryLinkSource: 'tag'
+			}
+		}
+	};
+}
 
 module.exports = config;
