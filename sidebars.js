@@ -26,12 +26,6 @@ const sidebars = {
 		apiCategory('api-matchmaker', 'Matchmaker API', require('./docs/api/api-matchmaker/sidebar.js')),
 		apiCategory('api-party', 'Party API', require('./docs/api/api-party/sidebar.js')),
 	],
-	libs: [
-		'libs/intro',
-	],
-	community: [
-		'community/intro',
-	],
 };
 
 function apiCategory(name, label, items) {
