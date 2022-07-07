@@ -21,4 +21,3 @@ yarn-error.log*
 
 /spec
 /gen
-/static/typescript

@@ -5,7 +5,7 @@
 	"scripts": {
 		"docusaurus": "docusaurus",
 		"start": "yarn docusaurus clean-api-docs all && docusaurus gen-api-docs all && PORT=6600 docusaurus start",
-		"build": "./scripts/copy-libs.sh && docusaurus build",
+		"build": "docusaurus build",
 		"swizzle": "docusaurus swizzle",
 		"deploy": "docusaurus deploy",
 		"clear": "docusaurus clear",
