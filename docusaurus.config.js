@@ -97,13 +97,13 @@ const config = {
 						position: 'left',
 						label: 'Community'
 					},
+
 					{
 						label: 'Pricing',
-						position: 'left',
+						position: 'right',
 						to: 'https://rivet.gg/developer/pricing',
 						target: '_blank'
 					},
-
 					{
 						label: 'Dashboard',
 						position: 'right',
