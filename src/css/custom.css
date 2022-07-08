@@ -23,6 +23,9 @@
 	--ifm-font-family-monospace: 'Fira Code', monospace;
 	--ifm-font-size-base: 95%;
 	--ifm-code-font-size: 90%;
+
+	--ifm-navbar-height: 80px;
+	--ifm-navbar-padding-vertical: calc(var(--ifm-spacing-vertical) * 0.95);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -162,8 +165,12 @@ html[data-theme='dark'] .header-github-link:before {
 
 /* Center navbar items */
 .navbar__inner {
-	max-width: 1360px;
+	max-width: 1400px;
 	margin: 0 auto;
+	padding: 0 20px;
+
+	background: #282828;
+	border-radius: 13px;
 }
 
 /* Response code buttons */
