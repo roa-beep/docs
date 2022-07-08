@@ -47,7 +47,11 @@ html[data-theme='dark'] {
 	--ifm-background-color: #151515;
 	--ifm-toc-border-color: var(--ifm-raised-bg);
 	--ifm-background-surface-color: var(--ifm-raised-bg);
+
 	--ifm-navbar-background-color: #282828;
+	--ifm-navbar-search-input-background-color: var(--ifm-color-gray-200);
+	--ifm-navbar-search-input-color: var(--ifm-color-gray-800);
+	--ifm-navbar-search-input-placeholder-color: var(--ifm-color-gray-500);
 
 	--openapi-code-dim-dark: var(--ifm-raised-bg);
 
