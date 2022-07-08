@@ -12,10 +12,9 @@ Now that the GitHub action has built and pushed your game to Rivet, we can deplo
     
 2. Change the *Version Name* to whatever you like. In this case, we'll set it to `0.0.2`.
     
-    <aside>
-    💡 We recommend loosely following semantic versioning for your game versions. Learn more about semantic versioning [here](https://en.wikipedia.org/wiki/Software_versioning).
-    
-    </aside>
+    :::note
+    We recommend loosely following semantic versioning for your game versions. Learn more about semantic versioning [here](https://en.wikipedia.org/wiki/Software_versioning).
+    :::
     
 3. Under *Initiate namespaces*, check *Production*.
 4. Click the toggle next to *CDN*. Select the most recent upload.
@@ -32,10 +31,4 @@ Now that the GitHub action has built and pushed your game to Rivet, we can deplo
     
 6. Click the *Publish* button at the top of the page.
 7. Click on the *Production* button in the sidebar and click *Visit* button. This will open your game in a new tab. Share this link with a friend and play your game together.
-    
-    <aside>
-    ⚠️ Rivet does not support HTTPS at the moment, so make sure your URL starts with `http://`. This will be fixed soon.
-    
-    </aside>
-    
 8. Repeat this process after pushing your code every time you want to update your game.

@@ -8,19 +8,17 @@ Before doing anything else, we need to link your GitHub repository to your Rivet
 
 1. Navigate to the *API* page on the Rivet dashboard and click *Create Cloud Namespace*. Copy the token to your clipboard.
     
-    <aside>
-    ⚠️ Do not share your cloud tokens with anybody. Cloud tokens give you access to privileged API endpoints.
-    
-    </aside>
+    :::caution
+    Do not share your cloud tokens with anybody. Cloud tokens give you access to privileged API endpoints.
+    :::
     
     ![Step%204%20Link%20GitHub%20to%20Rivet%20ff28c19d297a4445a97a8b342d3a532a/Untitled.png](Step%204%20Link%20GitHub%20to%20Rivet%20ff28c19d297a4445a97a8b342d3a532a/Untitled.png)
     
 2. Open your GitHub repository on [GitHub.com](http://github.com) and click on the *Settings* tab then click *Secrets* in the sidebar.
     
-    <aside>
-    ⚠️ Make sure you go to your project's settings and not your profile's settings.
-    
-    </aside>
+    :::note
+    Make sure you go to your project's settings and not your profile's settings.
+    :::
     
     ![Step%204%20Link%20GitHub%20to%20Rivet%20ff28c19d297a4445a97a8b342d3a532a/Untitled%201.png](Step%204%20Link%20GitHub%20to%20Rivet%20ff28c19d297a4445a97a8b342d3a532a/Untitled%201.png)
     

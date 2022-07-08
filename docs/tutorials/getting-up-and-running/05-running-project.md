@@ -10,10 +10,9 @@ import LoomEmbed from '@site/src/components/LoomEmbed';
     
 2. If prompted *Do you trust the authors of this folder?*, click *Yes, I trust the authors*
     
-    <aside>
-    💡 Code dependency supply-chain attacks are a growing threat to software development companies. This dialog helps prevent inadvertently running code you didn't intend to on your local machine. You can read more about recent supply-chain attacks at large companies like Apple and Microsoft [here](https://arstechnica.com/gadgets/2021/03/more-top-tier-companies-targeted-by-new-type-of-potentially-serious-attack/).
-    
-    </aside>
+    ::note
+    Code dependency supply-chain attacks are a growing threat to software development companies. This dialog helps prevent inadvertently running code you didn't intend to on your local machine. You can read more about recent supply-chain attacks at large companies like Apple and Microsoft [here](https://arstechnica.com/gadgets/2021/03/more-top-tier-companies-targeted-by-new-type-of-potentially-serious-attack/).
+    :::
     
     ![Step%205%20Run%20our%20project%20with%20Visual%20Studio%20Code%20ca0c46edc76f4a39971162d4a94b3fde/Untitled%201.png](Step%205%20Run%20our%20project%20with%20Visual%20Studio%20Code%20ca0c46edc76f4a39971162d4a94b3fde/Untitled%201.png)
     
