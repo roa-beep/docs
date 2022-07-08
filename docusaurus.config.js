@@ -14,6 +14,9 @@ const config = {
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.ico',
 
+	organizationName: 'rivet',
+	projectName: 'docs',
+
 	// Even if you don't use internalization, you can use this field to set useful
 	// metadata like html lang. For example, if your site is Chinese, you may want
 	// to replace "en" with "zh-Hans".
@@ -72,12 +75,6 @@ const config = {
 				items: [
 					{
 						type: 'doc',
-						docId: 'tutorials/intro',
-						position: 'left',
-						label: 'Tutorials'
-					},
-					{
-						type: 'doc',
 						docId: 'concepts/intro',
 						position: 'left',
 						label: 'Concepts'
@@ -112,7 +109,7 @@ const config = {
 						position: 'right',
 						to: 'https://rivet.gg/developer/dashboard',
 						target: '_blank'
-					},
+					}
 				]
 			},
 			footer: {
@@ -122,7 +119,7 @@ const config = {
 				// 		title: 'Docs',
 				// 		items: [
 				// 			{
-				// 				label: 'Tutorial',
+				// 				label: 'Overview',
 				// 				to: '/docs/intro'
 				// 			}
 				// 		]
@@ -132,7 +129,7 @@ const config = {
 				// 		items: [
 				// 			{
 				// 				label: 'Stack Overflow',
-				// 				href: 'https://stackoverflow.com/questions/tagged/docusaurus'
+				// 				href: 'https://stackoverflow.com/questions/tagged/rivetgg'
 				// 			},
 				// 			{
 				// 				label: 'Discord',
@@ -140,7 +137,7 @@ const config = {
 				// 			},
 				// 			{
 				// 				label: 'Twitter',
-				// 				href: 'https://twitter.com/docusaurus'
+				// 				href: 'https://twitter.com/rivetofficial'
 				// 			}
 				// 		]
 				// 	},
@@ -153,12 +150,12 @@ const config = {
 				// 			},
 				// 			{
 				// 				label: 'GitHub',
-				// 				href: 'https://github.com/facebook/docusaurus'
+				// 				href: 'https://github.com/rivet-gg'
 				// 			}
 				// 		]
 				// 	}
 				// ],
-				copyright: `Copyright © ${new Date().getFullYear()} Rivet Gaming, LLC. Built with Docusaurus.`
+				copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`
 			},
 			prism: {
 				theme: lightCodeTheme,
