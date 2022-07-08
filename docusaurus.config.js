@@ -34,7 +34,7 @@ const config = {
 					sidebarPath: require.resolve('./sidebars.js'),
 					editUrl: 'https://github.com/rivet-gg/docs/tree/main/',
 					docLayoutComponent: '@theme/DocPage',
-					docItemComponent: '@theme/ApiItem',
+					docItemComponent: '@theme/ApiItem'
 				},
 				theme: {
 					customCss: require.resolve('./src/css/custom.css')
@@ -62,12 +62,15 @@ const config = {
 		]
 	],
 	themes: [
-		['@easyops-cn/docusaurus-search-local', {
-			hashed: true,
-			highlightSearchTermsOnTargetPage: true,
-			explicitSearchResultPath: true,
-		}],
-		'docusaurus-theme-openapi-docs',
+		[
+			'@easyops-cn/docusaurus-search-local',
+			{
+				hashed: true,
+				highlightSearchTermsOnTargetPage: true,
+				explicitSearchResultPath: true
+			}
+		],
+		'docusaurus-theme-openapi-docs'
 	],
 
 	themeConfig:
@@ -80,7 +83,8 @@ const config = {
 				title: 'Rivet',
 				logo: {
 					alt: 'Rivet Logo',
-					src: 'img/logo-circle-small.png'
+					src: 'img/logo-large-black.svg',
+					srcDark: 'img/logo-large.svg'
 				},
 				items: [
 					{
@@ -173,6 +177,22 @@ const config = {
 				// ],
 				copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`
 			},
+			languageTabs: [
+				// Refer to https://github.com/PaloAltoNetworks/docusaurus-openapi-docs/blob/ffaf42bd4c0665096d4ca2a0fa39a4530f7b008f/packages/docusaurus-theme-openapi-docs/src/theme/ApiDemoPanel/Curl/index.tsx#L31
+				// and https://github.com/PaloAltoNetworks/docusaurus-openapi-docs/blob/ffaf42bd4c0665096d4ca2a0fa39a4530f7b008f/packages/docusaurus-theme-openapi-docs/src/theme/ApiDemoPanel/Curl/index.tsx#L131-L160
+				{
+					tabName: 'cURL',
+					highlight: 'bash',
+					language: 'curl',
+					codeLanguage: 'bash',
+					variant: 'curl',
+					options: {
+						longFormat: false,
+						followRedirect: true,
+						trimRequestBody: true
+					}
+				}
+			],
 			prism: {
 				theme: lightCodeTheme,
 				darkTheme: darkCodeTheme
