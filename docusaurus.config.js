@@ -34,7 +34,7 @@ const config = {
 					sidebarPath: require.resolve('./sidebars.js'),
 					editUrl: 'https://github.com/rivet-gg/docs/tree/main/',
 					docLayoutComponent: '@theme/DocPage',
-					docItemComponent: '@theme/ApiItem'
+					docItemComponent: '@theme/ApiItem',
 				},
 				theme: {
 					customCss: require.resolve('./src/css/custom.css')
