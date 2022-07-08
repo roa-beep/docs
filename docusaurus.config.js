@@ -64,8 +64,7 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			colorMode: {
-				defaultMode: 'dark',
-				respectPrefersColorScheme: true
+				defaultMode: 'dark'
 			},
 			navbar: {
 				title: 'Rivet',
