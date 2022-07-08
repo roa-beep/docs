@@ -61,7 +61,14 @@ const config = {
 			}
 		]
 	],
-	themes: ['docusaurus-theme-openapi-docs'],
+	themes: [
+		['@easyops-cn/docusaurus-search-local', {
+			hashed: true,
+			highlightSearchTermsOnTargetPage: true,
+			explicitSearchResultPath: true,
+		}],
+		'docusaurus-theme-openapi-docs',
+	],
 
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
