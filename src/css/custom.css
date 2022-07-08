@@ -26,6 +26,7 @@
 	--ifm-font-family-monospace: 'Fira Code', monospace;
 	--ifm-font-size-base: 95%;
 	--ifm-code-font-size: 90%;
+	--ifm-font-weight-semibold: 600;
 
 	--ifm-navbar-height: 80px;
 	--ifm-navbar-padding-vertical: calc(var(--ifm-spacing-vertical) * 0.95);
