@@ -4,6 +4,8 @@
  * work well for content-centric websites.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 /* You can override the default Infima variables here. */
 :root {
 	--ifm-color-primary: #2e8555;
@@ -16,6 +18,7 @@
 	--ifm-code-font-size: 95%;
 	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
+	--ifm-font-family-base: 'Open Sans', sans-serif;
 	--ifm-font-family-monospace: 'Fira Code', monospace;
 	--ifm-font-size-base: 95%;
 	--ifm-code-font-size: 90%;
