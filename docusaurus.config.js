@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: 'Rivet Docs',
-	tagline: 'Rivet Documentation Hub',
-	url: 'https://your-docusaurus-test-site.com',
+	title: 'Rivet',
+	tagline: 'Infrastructure for the Metaverse',
+	url: 'https://rivet.gg',
 	baseUrl: '/',
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
@@ -17,6 +17,9 @@ const config = {
 	organizationName: 'rivet',
 	projectName: 'docs',
 
+	// Even if you don't use internalization, you can use this field to set useful
+	// metadata like html lang. For example, if your site is Chinese, you may want
+	// to replace "en" with "zh-Hans".
 	i18n: {
 		defaultLocale: 'en',
 		locales: ['en']
@@ -29,19 +32,9 @@ const config = {
 			({
 				docs: {
 					sidebarPath: require.resolve('./sidebars.js'),
-					// Please change this to your repo.
-					// Remove this to remove the "edit this page" links.
-					editUrl:
-						'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+					editUrl: 'https://github.com/rivet-gg/docs/tree/main/',
 					docLayoutComponent: '@theme/DocPage',
 					docItemComponent: '@theme/ApiItem'
-				},
-				blog: {
-					showReadingTime: true,
-					// Please change this to your repo.
-					// Remove this to remove the "edit this page" links.
-					editUrl:
-						'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/'
 				},
 				theme: {
 					customCss: require.resolve('./src/css/custom.css')
@@ -74,71 +67,94 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			navbar: {
-				title: 'Rivet Docs',
+				title: 'Rivet',
 				logo: {
 					alt: 'Rivet Logo',
-					src: 'img/logo.svg',
-					srcDark: 'img/logo.svg'
+					src: 'img/logo-circle-small.png'
 				},
 				items: [
 					{
 						type: 'doc',
-						docId: 'intro',
+						docId: 'concepts/intro',
 						position: 'left',
-						label: 'Overview'
+						label: 'Concepts'
 					},
-					{ to: '/blog', label: 'Blog', position: 'left' },
 					{
-						href: 'https://github.com/rivet-gg',
-						className: 'header-github-link',
-						target: '_blank',
-						position: 'right'
+						type: 'doc',
+						docId: 'api/intro',
+						position: 'left',
+						label: 'API'
+					},
+					{
+						type: 'doc',
+						docId: 'libs/intro',
+						position: 'left',
+						label: 'Libraries'
+					},
+					{
+						type: 'doc',
+						docId: 'community/intro',
+						position: 'left',
+						label: 'Community'
+					},
+
+					{
+						label: 'Pricing',
+						position: 'right',
+						to: 'https://rivet.gg/developer/pricing',
+						target: '_blank'
+					},
+					{
+						label: 'Dashboard',
+						position: 'right',
+						to: 'https://rivet.gg/developer/dashboard',
+						target: '_blank'
 					}
 				]
 			},
 			footer: {
 				style: 'dark',
-				links: [
-					{
-						title: 'Docs',
-						items: [
-							{
-								label: 'Overview',
-								to: '/docs/intro'
-							}
-						]
-					},
-					{
-						title: 'Community',
-						items: [
-							{
-								label: 'Stack Overflow',
-								href: 'https://stackoverflow.com/questions/tagged/rivetgg'
-							},
-							{
-								label: 'Discord',
-								href: 'https://discordapp.com/invite/docusaurus'
-							},
-							{
-								label: 'Twitter',
-								href: 'https://twitter.com/rivetofficial'
-							}
-						]
-					},
-					{
-						title: 'More',
-						items: [
-							{
-								label: 'Blog',
-								to: '/blog'
-							},
-							{
-								label: 'GitHub',
-								href: 'https://github.com/rivet-gg'
-							}
-						]
-					}
-				],
+				// links: [
+				// 	{
+				// 		title: 'Docs',
+				// 		items: [
+				// 			{
+				// 				label: 'Overview',
+				// 				to: '/docs/intro'
+				// 			}
+				// 		]
+				// 	},
+				// 	{
+				// 		title: 'Community',
+				// 		items: [
+				// 			{
+				// 				label: 'Stack Overflow',
+				// 				href: 'https://stackoverflow.com/questions/tagged/rivetgg'
+				// 			},
+				// 			{
+				// 				label: 'Discord',
+				// 				href: 'https://discordapp.com/invite/docusaurus'
+				// 			},
+				// 			{
+				// 				label: 'Twitter',
+				// 				href: 'https://twitter.com/rivetofficial'
+				// 			}
+				// 		]
+				// 	},
+				// 	{
+				// 		title: 'More',
+				// 		items: [
+				// 			{
+				// 				label: 'Blog',
+				// 				to: '/blog'
+				// 			},
+				// 			{
+				// 				label: 'GitHub',
+				// 				href: 'https://github.com/rivet-gg'
+				// 			}
+				// 		]
+				// 	}
+				// ],
 				copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`
 			},
 			prism: {
@@ -152,7 +168,7 @@ function apiConfig(name, service) {
 	return {
 		[name]: {
 			specPath: `spec/${service}.openapi.json`,
-			outputDir: `docs/${name}`,
+			outputDir: `docs/api/${name}`,
 			sidebarOptions: {
 				groupPathsBy: 'tag',
 				categoryLinkSource: 'tag'

@@ -11,8 +11,8 @@ for path in $(find gen/ -type d -name 'api-*'); do
 	api=$(basename "$path")
 
 	echo
-	echo "> Copying $path docs"
-	rm -rf static/lib/$api/typescript
-	mkdir -p static/lib/$api/typescript
-	cp -r $path/docs/. static/lib/$api/typescript
+	echo "> Building $path docs"
+	rm -rf static/libs/$api/typescript
+	mkdir -p static/libs/$api/typescript
+	cp -r $path/docs/. static/libs/$api/typescript
 done

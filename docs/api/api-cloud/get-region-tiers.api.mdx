@@ -1,0 +1,51 @@
+---
+id: get-region-tiers
+sidebar_label: GetRegionTiers
+hide_title: true
+hide_table_of_contents: true
+api: {"operationId":"GetRegionTiers","responses":{"200":{"description":"GetRegionTiers 200 response","content":{"application/json":{"schema":{"type":"object","properties":{"tiers":{"type":"array","items":{"type":"object","properties":{"tier_name_id":{"type":"string","maxLength":16,"minLength":1,"pattern":"^[a-zA-Z0-9](?:[a-zA-Z0-9]-?)+[a-zA-Z0-9]$"},"rivet_cores_numerator":{"type":"number","minimum":0,"format":"int32","nullable":true},"rivet_cores_denominator":{"type":"number","minimum":0,"format":"int32","nullable":true},"cpu":{"type":"number","minimum":0,"format":"int64","nullable":true},"memory":{"type":"number","minimum":0,"format":"int64","nullable":true},"disk":{"type":"number","minimum":0,"format":"int64","nullable":true},"bandwidth":{"type":"number","minimum":0,"format":"int64","nullable":true},"price_per_second":{"type":"number","minimum":0,"format":"int64","nullable":true}},"required":["bandwidth","cpu","disk","memory","price_per_second","rivet_cores_denominator","rivet_cores_numerator","tier_name_id"]}}},"required":["tiers"]}}}},"400":{"description":"BadRequestError 400 response","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"}},"required":["code","message"]}}}},"403":{"description":"ForbiddenError 403 response","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"}},"required":["code","message"]}}}},"404":{"description":"NotFoundError 404 response","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"}},"required":["code","message"]}}}},"408":{"description":"UnauthorizedError 408 response","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"}},"required":["code","message"]}}}},"429":{"description":"RateLimitError 429 response","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"}},"required":["code","message"]}}}},"500":{"description":"InternalError 500 response","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"}},"required":["message"]}}}}},"tags":["cloud","portal"],"description":"GetRegionTiers","method":"get","path":"/region-tiers","security":[{"smithy.api.httpBearerAuth":[]}],"securitySchemes":{"smithy.api.httpBearerAuth":{"type":"http","description":"HTTP Bearer authentication","scheme":"bearer"}},"info":{"title":"CloudService","version":"2022-6-3"},"postman":{"name":"Get Region Tiers","description":{"type":"text/plain"},"url":{"path":["region-tiers"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Accept","value":"application/json"}],"method":"GET"}}
+sidebar_class_name: "get api-method"
+info_path: docs/api/api-cloud/cloud-service
+---
+
+import ParamsItem from "@theme/ParamsItem";
+import SchemaItem from "@theme/SchemaItem"
+import ApiTabs from "@theme/ApiTabs";
+import TabItem from "@theme/TabItem";
+
+## GetRegionTiers
+
+
+
+GetRegionTiers
+
+<div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+GetRegionTiers 200 response
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}}><summary style={{}}><strong>tiers</strong><span style={{"opacity":"0.6"}}> object[]</span><strong style={{"fontSize":"var(--ifm-code-font-size)","color":"var(--openapi-required)"}}> required</strong></summary><div style={{"marginLeft":"1rem"}}><ul><SchemaItem collapsible={false} name={"tier_name_id"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={"**Possible values:** 1 ≤ length ≤ 16, Value must match regular expression `^[a-zA-Z0-9](?:[a-zA-Z0-9]-?)+[a-zA-Z0-9]$`"}></SchemaItem><SchemaItem collapsible={false} name={"rivet_cores_numerator"} required={true} schemaDescription={undefined} schemaName={"int32"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"rivet_cores_denominator"} required={true} schemaDescription={undefined} schemaName={"int32"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"cpu"} required={true} schemaDescription={undefined} schemaName={"int64"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"memory"} required={true} schemaDescription={undefined} schemaName={"int64"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"disk"} required={true} schemaDescription={undefined} schemaName={"int64"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"bandwidth"} required={true} schemaDescription={undefined} schemaName={"int64"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"price_per_second"} required={true} schemaDescription={undefined} schemaName={"int64"} qualifierMessage={undefined}></SchemaItem></ul></div></details></SchemaItem></ul></details></div></TabItem><TabItem label={"400"} value={"400"}><div>
+
+BadRequestError 400 response
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"code"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"message"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem></ul></details></div></TabItem><TabItem label={"403"} value={"403"}><div>
+
+ForbiddenError 403 response
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"code"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"message"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem></ul></details></div></TabItem><TabItem label={"404"} value={"404"}><div>
+
+NotFoundError 404 response
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"code"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"message"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem></ul></details></div></TabItem><TabItem label={"408"} value={"408"}><div>
+
+UnauthorizedError 408 response
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"code"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"message"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem></ul></details></div></TabItem><TabItem label={"429"} value={"429"}><div>
+
+RateLimitError 429 response
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"code"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"message"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem></ul></details></div></TabItem><TabItem label={"500"} value={"500"}><div>
+
+InternalError 500 response
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"code"} required={false} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"message"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem></ul></details></div></TabItem></ApiTabs></div>
+      
