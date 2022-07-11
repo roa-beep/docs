@@ -36,7 +36,7 @@ Listen to activities endpoint
 
 ```jsx
 let friends = [];
-let friendsStream = new RepeatingRequest(async (abortSignal, watchIndex) => {
+let friendsStream = new identity.common.RepeatingRequest(async (abortSignal, watchIndex) => {
 	return await this.identityApi.getActivities({ watchIndex }, { abortSignal });
 });
 
