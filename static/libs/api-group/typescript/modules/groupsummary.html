@@ -55,10 +55,16 @@
 			<a href="groupsummary.html#displayname" class="tsd-kind-icon">display<wbr>Name</a>
 		</li>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
+			<a href="groupsummary.html#external" class="tsd-kind-icon">external</a>
+		</li>
+		<li class=" tsd-kind-property tsd-parent-kind-namespace">
 			<a href="groupsummary.html#id" class="tsd-kind-icon">id</a>
 		</li>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
 			<a href="groupsummary.html#iscurrentidentitymember" class="tsd-kind-icon">is<wbr>Current<wbr>Identity<wbr>Member</a>
+		</li>
+		<li class=" tsd-kind-property tsd-parent-kind-namespace">
+			<a href="groupsummary.html#isdeveloper" class="tsd-kind-icon">is<wbr>Developer</a>
 		</li>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
 			<a href="groupsummary.html#membercount" class="tsd-kind-icon">member<wbr>Count</a>
@@ -70,6 +76,13 @@
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
+		<section class="tsd-panel tsd-comment">
+			<div class="tsd-comment tsd-typography">
+				<div class="lead">
+					<p>A group summary.</p>
+				</div>
+			</div>
+		</section>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
@@ -80,8 +93,10 @@
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="groupsummary.html#avatarurl" class="tsd-kind-icon">avatar<wbr>Url</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="groupsummary.html#bio" class="tsd-kind-icon">bio</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="groupsummary.html#displayname" class="tsd-kind-icon">display<wbr>Name</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="groupsummary.html#external" class="tsd-kind-icon">external</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="groupsummary.html#id" class="tsd-kind-icon">id</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="groupsummary.html#iscurrentidentitymember" class="tsd-kind-icon">is<wbr>Current<wbr>Identity<wbr>Member</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="groupsummary.html#isdeveloper" class="tsd-kind-icon">is<wbr>Developer</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="groupsummary.html#membercount" class="tsd-kind-icon">member<wbr>Count</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="groupsummary.html#publicity" class="tsd-kind-icon">publicity</a></li>
 						</ul>
@@ -97,9 +112,14 @@
 				<div class="tsd-signature tsd-kind-icon">avatar<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:555</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1069</li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The URL of this group&#39;s avatar image.</p>
+					</div>
+				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
 				<a name="bio" class="tsd-anchor"></a>
@@ -107,9 +127,14 @@
 				<div class="tsd-signature tsd-kind-icon">bio<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:556</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1079</li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A biography.</p>
+					</div>
+				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
 				<a name="displayname" class="tsd-anchor"></a>
@@ -117,9 +142,29 @@
 				<div class="tsd-signature tsd-kind-icon">display<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:554</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1064</li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Represent a resource&#39;s readable display name.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
+				<a name="external" class="tsd-anchor"></a>
+				<h3>external</h3>
+				<div class="tsd-signature tsd-kind-icon">external<span class="tsd-signature-symbol">:</span> <a href="groupexternallinks.html" class="tsd-signature-type">GroupExternalLinks</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in clients/client/src/models/models_0.ts:1074</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>External links for this group.</p>
+					</div>
+				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
 				<a name="id" class="tsd-anchor"></a>
@@ -127,9 +172,14 @@
 				<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:553</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1059</li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A universally unique identifier.</p>
+					</div>
+				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
 				<a name="iscurrentidentitymember" class="tsd-anchor"></a>
@@ -137,9 +187,29 @@
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Current<wbr>Identity<wbr>Member<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:557</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1084</li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Whether or not the current identity is a member of this group.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
+				<a name="isdeveloper" class="tsd-anchor"></a>
+				<h3>is<wbr>Developer</h3>
+				<div class="tsd-signature tsd-kind-icon">is<wbr>Developer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in clients/client/src/models/models_0.ts:1099</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Whether or not this group is a developer.</p>
+					</div>
+				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
 				<a name="membercount" class="tsd-anchor"></a>
@@ -147,9 +217,14 @@
 				<div class="tsd-signature tsd-kind-icon">member<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:559</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1094</li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Unsigned 32 bit integer.</p>
+					</div>
+				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
 				<a name="publicity" class="tsd-anchor"></a>
@@ -157,9 +232,14 @@
 				<div class="tsd-signature tsd-kind-icon">publicity<span class="tsd-signature-symbol">:</span> <a href="../enums/grouppublicity.html" class="tsd-signature-type">GroupPublicity</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:558</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1089</li>
 					</ul>
 				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The current publicity value for the given group.</p>
+					</div>
+				</div>
 			</section>
 		</section>
 		<footer>
