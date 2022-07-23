@@ -157,6 +157,9 @@
 		<li class=" tsd-kind-type-alias">
 			<a href="index.html#kvserviceclientresolvedconfigtype" class="tsd-kind-icon">Kv<wbr>Service<wbr>Client<wbr>Resolved<wbr>Config<wbr>Type</a>
 		</li>
+		<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+			<a href="index.html#partialby" class="tsd-kind-icon">Partial<wbr>By</a>
+		</li>
 		<li class=" tsd-kind-type-alias">
 			<a href="index.html#serviceinputtypes" class="tsd-kind-icon">Service<wbr>Input<wbr>Types</a>
 		</li>
@@ -236,6 +239,7 @@
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-type-alias"><a href="index.html#kvserviceclientconfigtype" class="tsd-kind-icon">Kv<wbr>Service<wbr>Client<wbr>Config<wbr>Type</a></li>
 							<li class="tsd-kind-type-alias"><a href="index.html#kvserviceclientresolvedconfigtype" class="tsd-kind-icon">Kv<wbr>Service<wbr>Client<wbr>Resolved<wbr>Config<wbr>Type</a></li>
+							<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="index.html#partialby" class="tsd-kind-icon">Partial<wbr>By</a></li>
 							<li class="tsd-kind-type-alias"><a href="index.html#serviceinputtypes" class="tsd-kind-icon">Service<wbr>Input<wbr>Types</a></li>
 							<li class="tsd-kind-type-alias"><a href="index.html#serviceoutputtypes" class="tsd-kind-icon">Service<wbr>Output<wbr>Types</a></li>
 						</ul>
@@ -248,10 +252,10 @@
 			<section class="tsd-panel tsd-member tsd-kind-type-alias">
 				<a name="kvserviceclientconfigtype" class="tsd-anchor"></a>
 				<h3>Kv<wbr>Service<wbr>Client<wbr>Config<wbr>Type</h3>
-				<div class="tsd-signature tsd-kind-icon">Kv<wbr>Service<wbr>Client<wbr>Config<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">__SmithyConfiguration</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><a href="interfaces/clientdefaults.html" class="tsd-signature-type">ClientDefaults</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">CustomEndpointsInputConfig</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">RetryInputConfig</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">HostHeaderInputConfig</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">UserAgentInputConfig</span></div>
+				<div class="tsd-signature tsd-kind-icon">Kv<wbr>Service<wbr>Client<wbr>Config<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="index.html#partialby" class="tsd-signature-type">PartialBy</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">__SmithyConfiguration</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><a href="interfaces/clientdefaults.html" class="tsd-signature-type">ClientDefaults</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">CustomEndpointsInputConfig</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">RetryInputConfig</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">HostHeaderInputConfig</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">UserAgentInputConfig</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"endpoint"</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/KvServiceClient.ts:195</li>
+						<li>Defined in clients/client/src/KvServiceClient.ts:203</li>
 					</ul>
 				</aside>
 			</section>
@@ -261,9 +265,28 @@
 				<div class="tsd-signature tsd-kind-icon">Kv<wbr>Service<wbr>Client<wbr>Resolved<wbr>Config<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">__SmithyResolvedConfiguration</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Required</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/clientdefaults.html" class="tsd-signature-type">ClientDefaults</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">CustomEndpointsResolvedConfig</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">RetryResolvedConfig</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">HostHeaderResolvedConfig</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">UserAgentResolvedConfig</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/KvServiceClient.ts:206</li>
+						<li>Defined in clients/client/src/KvServiceClient.ts:215</li>
 					</ul>
 				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+				<a name="partialby" class="tsd-anchor"></a>
+				<h3>Partial<wbr>By</h3>
+				<div class="tsd-signature tsd-kind-icon">Partial<wbr>By&lt;T, K&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in clients/client/src/KvServiceClient.ts:202</li>
+					</ul>
+				</aside>
+				<h4 class="tsd-type-parameters-title">Type parameters</h4>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T</h4>
+					</li>
+					<li>
+						<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span></h4>
+					</li>
+				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-type-alias">
 				<a name="serviceinputtypes" class="tsd-anchor"></a>
@@ -271,7 +294,7 @@
 				<div class="tsd-signature tsd-kind-icon">Service<wbr>Input<wbr>Types<span class="tsd-signature-symbol">:</span> <a href="interfaces/deletebatchcommandinput.html" class="tsd-signature-type">DeleteBatchCommandInput</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/deletecommandinput.html" class="tsd-signature-type">DeleteCommandInput</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/getbatchcommandinput.html" class="tsd-signature-type">GetBatchCommandInput</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/getcommandinput.html" class="tsd-signature-type">GetCommandInput</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/putbatchcommandinput.html" class="tsd-signature-type">PutBatchCommandInput</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/putcommandinput.html" class="tsd-signature-type">PutCommandInput</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/KvServiceClient.ts:74</li>
+						<li>Defined in clients/client/src/KvServiceClient.ts:76</li>
 					</ul>
 				</aside>
 			</section>
@@ -281,7 +304,7 @@
 				<div class="tsd-signature tsd-kind-icon">Service<wbr>Output<wbr>Types<span class="tsd-signature-symbol">:</span> <a href="interfaces/deletebatchcommandoutput.html" class="tsd-signature-type">DeleteBatchCommandOutput</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/deletecommandoutput.html" class="tsd-signature-type">DeleteCommandOutput</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/getbatchcommandoutput.html" class="tsd-signature-type">GetBatchCommandOutput</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/getcommandoutput.html" class="tsd-signature-type">GetCommandOutput</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/putbatchcommandoutput.html" class="tsd-signature-type">PutBatchCommandOutput</a><span class="tsd-signature-symbol"> | </span><a href="interfaces/putcommandoutput.html" class="tsd-signature-type">PutCommandOutput</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/KvServiceClient.ts:82</li>
+						<li>Defined in clients/client/src/KvServiceClient.ts:84</li>
 					</ul>
 				</aside>
 			</section>

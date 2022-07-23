@@ -63,6 +63,33 @@
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
+		<section class="tsd-panel tsd-comment">
+			<div class="tsd-comment tsd-typography">
+				<div class="lead">
+					<p>Prepares an avatar image upload.</p>
+				</div>
+				<dl class="tsd-comment-tags">
+					<dt>example</dt>
+					<dd><p>Use a bare-bones client and the command you need to make an API call.</p>
+						<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { IdentityServiceClient, IdentityAvatarUploadPrepareCommand } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@rivet-gg/identity&quot;</span>; <span class="hljs-comment">// ES Modules import</span>
+<span class="hljs-comment">// const { IdentityServiceClient, IdentityAvatarUploadPrepareCommand } = require(&quot;@rivet-gg/identity&quot;); // CommonJS import</span>
+<span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> IdentityServiceClient(config);
+<span class="hljs-keyword">const</span> command = <span class="hljs-keyword">new</span> IdentityAvatarUploadPrepareCommand(input);
+<span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> client.send(command);
+</code></pre>
+					</dd>
+					<dt>see</dt>
+					<dd><p><a href="../interfaces/identityavataruploadpreparecommandinput.html">IdentityAvatarUploadPrepareCommandInput</a> for command&#39;s <code>input</code> shape.</p>
+					</dd>
+					<dt>see</dt>
+					<dd><p><a href="../interfaces/identityavataruploadpreparecommandoutput.html">IdentityAvatarUploadPrepareCommandOutput</a> for command&#39;s <code>response</code> shape.</p>
+					</dd>
+					<dt>see</dt>
+					<dd><p><a href="../interfaces/identityserviceclientresolvedconfig.html">config</a> for IdentityServiceClient&#39;s <code>config</code> shape.</p>
+					</dd>
+				</dl>
+			</div>
+		</section>
 		<section class="tsd-panel tsd-hierarchy">
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
@@ -114,7 +141,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/commands/IdentityAvatarUploadPrepareCommand.ts:34</li>
+								<li>Defined in clients/client/src/commands/IdentityAvatarUploadPrepareCommand.ts:51</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -137,7 +164,7 @@
 				<aside class="tsd-sources">
 					<p>Overrides Command.input</p>
 					<ul>
-						<li>Defined in clients/client/src/commands/IdentityAvatarUploadPrepareCommand.ts:38</li>
+						<li>Defined in clients/client/src/commands/IdentityAvatarUploadPrepareCommand.ts:55</li>
 					</ul>
 				</aside>
 			</section>

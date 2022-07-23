@@ -67,6 +67,9 @@
 					<a href="clientdefaults.html#retrymode" class="tsd-kind-icon">retry<wbr>Mode</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="clientdefaults.html#token" class="tsd-kind-icon">token</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="clientdefaults.html#usedualstackendpoint" class="tsd-kind-icon">use<wbr>Dualstack<wbr>Endpoint</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -104,6 +107,7 @@
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="clientdefaults.html#maxattempts" class="tsd-kind-icon">max<wbr>Attempts</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="clientdefaults.html#requesthandler" class="tsd-kind-icon">request<wbr>Handler</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="clientdefaults.html#retrymode" class="tsd-kind-icon">retry<wbr>Mode</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="clientdefaults.html#token" class="tsd-kind-icon">token</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="clientdefaults.html#usedualstackendpoint" class="tsd-kind-icon">use<wbr>Dualstack<wbr>Endpoint</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="clientdefaults.html#usefipsendpoint" class="tsd-kind-icon">use<wbr>Fips<wbr>Endpoint</a></li>
 						</ul>
@@ -119,7 +123,7 @@
 				<div class="tsd-signature tsd-kind-icon">defaults<wbr>Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DefaultsMode</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Provider</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DefaultsMode</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/IdentityServiceClient.ts:276</li>
+						<li>Defined in clients/client/src/IdentityServiceClient.ts:283</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -134,7 +138,7 @@
 				<div class="tsd-signature tsd-kind-icon">disable<wbr>Host<wbr>Prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/IdentityServiceClient.ts:240</li>
+						<li>Defined in clients/client/src/IdentityServiceClient.ts:242</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -150,7 +154,7 @@
 				<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">__Logger</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/IdentityServiceClient.ts:255</li>
+						<li>Defined in clients/client/src/IdentityServiceClient.ts:262</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -165,7 +169,7 @@
 				<div class="tsd-signature tsd-kind-icon">max<wbr>Attempts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">__Provider</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/IdentityServiceClient.ts:245</li>
+						<li>Defined in clients/client/src/IdentityServiceClient.ts:252</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -180,7 +184,7 @@
 				<div class="tsd-signature tsd-kind-icon">request<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">__HttpHandler</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/IdentityServiceClient.ts:179</li>
+						<li>Defined in clients/client/src/IdentityServiceClient.ts:181</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -195,7 +199,7 @@
 				<div class="tsd-signature tsd-kind-icon">retry<wbr>Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">__Provider</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/IdentityServiceClient.ts:250</li>
+						<li>Defined in clients/client/src/IdentityServiceClient.ts:257</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -205,12 +209,27 @@
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="token" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> token</h3>
+				<div class="tsd-signature tsd-kind-icon">token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in clients/client/src/IdentityServiceClient.ts:247</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Bearer token for auth.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="usedualstackendpoint" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> use<wbr>Dualstack<wbr>Endpoint</h3>
 				<div class="tsd-signature tsd-kind-icon">use<wbr>Dualstack<wbr>Endpoint<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">__Provider</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/IdentityServiceClient.ts:260</li>
+						<li>Defined in clients/client/src/IdentityServiceClient.ts:267</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -225,7 +244,7 @@
 				<div class="tsd-signature tsd-kind-icon">use<wbr>Fips<wbr>Endpoint<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">__Provider</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/IdentityServiceClient.ts:265</li>
+						<li>Defined in clients/client/src/IdentityServiceClient.ts:272</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
