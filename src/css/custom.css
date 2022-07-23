@@ -200,3 +200,8 @@ html[data-theme='dark']
 div.theme-api-markdown li::before {
 	content: none;
 }
+
+/* Hero */
+.hero {
+	border-radius: 13px;
+}

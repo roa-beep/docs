@@ -62,15 +62,16 @@ function Tutorial({ title, snapshotSrc, description }: TutorialItem) {
 }
 
 export default function HomepageOverview(): JSX.Element {
-	return (
-		<section className={styles.tutorial}>
-			<div className='container'>
-				<div className='row'>
-					{TUTORIAL_LIST.map((props, idx) => (
-						<Tutorial key={idx} {...props} />
-					))}
-				</div>
-			</div>
-		</section>
-	);
+	// return (
+	// 	<section className={styles.tutorial}>
+	// 		<div className='container'>
+	// 			<div className='row'>
+	// 				{TUTORIAL_LIST.map((props, idx) => (
+	// 					<Tutorial key={idx} {...props} />
+	// 				))}
+	// 			</div>
+	// 		</div>
+	// 	</section>
+	// );
+	return (<div></div>);
 }

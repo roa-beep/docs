@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 	title: 'Rivet',
-	tagline: 'Infrastructure for the Metaverse',
+	tagline: 'Multiplayer Gaming for Everyone',
 	url: 'https://rivet.gg',
 	baseUrl: '/',
 	onBrokenLinks: 'throw',
@@ -85,31 +85,31 @@ const config = {
 				items: [
 					{
 						type: 'doc',
-						docId: 'tutorials/intro',
+						docId: 'tutorials/index',
 						position: 'left',
 						label: 'Tutorials'
 					},
 					{
 						type: 'doc',
-						docId: 'concepts/intro',
+						docId: 'concepts/index',
 						position: 'left',
 						label: 'Concepts'
 					},
 					{
 						type: 'doc',
-						docId: 'api/intro',
+						docId: 'api/index',
 						position: 'left',
 						label: 'API'
 					},
 					{
 						type: 'doc',
-						docId: 'libs/intro',
+						docId: 'libs/index',
 						position: 'left',
 						label: 'Libraries'
 					},
 					{
 						type: 'doc',
-						docId: 'community/intro',
+						docId: 'community/index',
 						position: 'left',
 						label: 'Community'
 					},
@@ -136,7 +136,7 @@ const config = {
 				// 		items: [
 				// 			{
 				// 				label: 'Overview',
-				// 				to: '/docs/intro'
+				// 				to: '/docs/index'
 				// 			}
 				// 		]
 				// 	},
@@ -171,7 +171,7 @@ const config = {
 				// 		]
 				// 	}
 				// ],
-				copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`
+				copyright: `Copyright © ${new Date().getFullYear()} Rivet Gaming, LLC. Built with Docusaurus.`
 			},
 			prism: {
 				theme: lightCodeTheme,

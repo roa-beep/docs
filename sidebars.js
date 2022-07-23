@@ -26,7 +26,7 @@ const sidebars = {
 		},
 	],
 	api: [
-		'api/intro',
+		'api/index',
 		apiCategory('api-chat', 'Chat API', require('./docs/api/api-chat/sidebar.js')),
 		apiCategory('api-cloud', 'Cloud API', require('./docs/api/api-cloud/sidebar.js')),
 		apiCategory('api-group', 'Group API', require('./docs/api/api-group/sidebar.js')),
