@@ -1,7 +1,9 @@
 {
 	"name": "rivet",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"private": true,
+	"author": "Rivet Gaming, LLC",
+	"license": "GNU-3.0",
 	"scripts": {
 		"docusaurus": "docusaurus",
 		"start": "docusaurus clean-api-docs all && docusaurus gen-api-docs all && docusaurus start --host 0.0.0.0 --port 6600",
