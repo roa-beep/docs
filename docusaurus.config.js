@@ -118,12 +118,12 @@ const config = {
 						label: 'Community'
 					},
 
-					{
-						label: 'Pricing',
-						position: 'right',
-						to: 'https://rivet.gg/developer/pricing',
-						target: '_blank'
-					},
+					// {
+					// 	label: 'Pricing',
+					// 	position: 'right',
+					// 	to: 'https://rivet.gg/developer/pricing',
+					// 	target: '_blank'
+					// },
 					{
 						label: 'Dashboard',
 						position: 'right',
