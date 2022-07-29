@@ -6,7 +6,7 @@ for path in $(find gen/ -type d -name 'api-*'); do
 	echo
 	echo
 	echo "> Building $path docs"
-	(cd $path && npm run postinstall && npm install && npm run build:docs -- --theme minimal)
+	(cd $path && npm install && npm run build:docs -- --theme minimal)
 
 	api=$(basename "$path")
 
