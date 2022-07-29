@@ -58,10 +58,7 @@
 			<a href="identityhandle.html#external" class="tsd-kind-icon">external</a>
 		</li>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
-			<a href="identityhandle.html#id" class="tsd-kind-icon">id</a>
-		</li>
-		<li class=" tsd-kind-property tsd-parent-kind-namespace">
-			<a href="identityhandle.html#isclaimed" class="tsd-kind-icon">is<wbr>Claimed</a>
+			<a href="identityhandle.html#identityid" class="tsd-kind-icon">identity<wbr>Id</a>
 		</li>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
 			<a href="identityhandle.html#isregistered" class="tsd-kind-icon">is<wbr>Registered</a>
@@ -91,8 +88,7 @@
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="identityhandle.html#avatarurl" class="tsd-kind-icon">avatar<wbr>Url</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="identityhandle.html#displayname" class="tsd-kind-icon">display<wbr>Name</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="identityhandle.html#external" class="tsd-kind-icon">external</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="identityhandle.html#id" class="tsd-kind-icon">id</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="identityhandle.html#isclaimed" class="tsd-kind-icon">is<wbr>Claimed</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="identityhandle.html#identityid" class="tsd-kind-icon">identity<wbr>Id</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="identityhandle.html#isregistered" class="tsd-kind-icon">is<wbr>Registered</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="identityhandle.html#presence" class="tsd-kind-icon">presence</a></li>
 						</ul>
@@ -108,12 +104,17 @@
 				<div class="tsd-signature tsd-kind-icon">account<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:447</li>
+						<li>Defined in clients/client/src/models/models_0.ts:465</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Identity profile account number (#1234).</p>
+						<p>Identity profile account number (#1234).
+							These are assigned in addition to an identity&#39;s display name in order to
+							allow multiple identities to have the same display name while still
+							providing a unique handle.
+							These are unique to each display name; you can have multiple accounts with
+						different display names and the same account number.</p>
 					</div>
 				</div>
 			</section>
@@ -123,7 +124,7 @@
 				<div class="tsd-signature tsd-kind-icon">avatar<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:452</li>
+						<li>Defined in clients/client/src/models/models_0.ts:470</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -138,7 +139,7 @@
 				<div class="tsd-signature tsd-kind-icon">display<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:442</li>
+						<li>Defined in clients/client/src/models/models_0.ts:453</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -153,7 +154,7 @@
 				<div class="tsd-signature tsd-kind-icon">external<span class="tsd-signature-symbol">:</span> <a href="identityexternallinks.html" class="tsd-signature-type">IdentityExternalLinks</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:468</li>
+						<li>Defined in clients/client/src/models/models_0.ts:485</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -163,12 +164,12 @@
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-				<a name="id" class="tsd-anchor"></a>
-				<h3>id</h3>
-				<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+				<a name="identityid" class="tsd-anchor"></a>
+				<h3>identity<wbr>Id</h3>
+				<div class="tsd-signature tsd-kind-icon">identity<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:437</li>
+						<li>Defined in clients/client/src/models/models_0.ts:448</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -178,27 +179,17 @@
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-				<a name="isclaimed" class="tsd-anchor"></a>
-				<h3>is<wbr>Claimed</h3>
-				<div class="tsd-signature tsd-kind-icon">is<wbr>Claimed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:464</li>
-					</ul>
-				</aside>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
 				<a name="isregistered" class="tsd-anchor"></a>
 				<h3>is<wbr>Registered</h3>
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Registered<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:462</li>
+						<li>Defined in clients/client/src/models/models_0.ts:480</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Whether or not this identity is registered via a linked account.</p>
+						<p>Whether or not this identity is registered with a linked account.</p>
 					</div>
 				</div>
 			</section>
@@ -208,7 +199,7 @@
 				<div class="tsd-signature tsd-kind-icon">presence<span class="tsd-signature-symbol">:</span> <a href="identitypresence.html" class="tsd-signature-type">IdentityPresence</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:457</li>
+						<li>Defined in clients/client/src/models/models_0.ts:475</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">

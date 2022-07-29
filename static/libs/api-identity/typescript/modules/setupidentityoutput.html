@@ -94,12 +94,12 @@
 				<div class="tsd-signature tsd-kind-icon">identity<span class="tsd-signature-symbol">:</span> <a href="identityprofile.html" class="tsd-signature-type">IdentityProfile</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:2957</li>
+						<li>Defined in clients/client/src/models/models_0.ts:3053</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An identity profile.</p>
+						<p>Information about the identity that was just authenticated.</p>
 					</div>
 				</div>
 			</section>
@@ -109,12 +109,23 @@
 				<div class="tsd-signature tsd-kind-icon">identity<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:2947</li>
+						<li>Defined in clients/client/src/models/models_0.ts:3043</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A JSON Web Token.</p>
+						<p>Token used to authenticate the identity.
+							Should be stored somewhere permanent.
+							Pass this to <code>rivet.api.identity#SetupIdentity$existing_identity_token</code>
+							next time <code>rivet.api.identity#SetupIdentity</code> is called.
+							Token has a 90 day TTL. This means that if <code>rivet.api.identity#SetupIdentity</code> is not called
+							again within 90 days, the token will no longer be valid. If this
+							happens, the user can recover their account through the linking process
+							(see <code>rivet.api.identity#PrepareGameLink</code>).
+							This token should be stored locally and never sent to a server or
+							another device.
+							If this token is comprimised, anyone with access to this token has
+						control of the identity.</p>
 					</div>
 				</div>
 			</section>
@@ -124,12 +135,12 @@
 				<div class="tsd-signature tsd-kind-icon">identity<wbr>Token<wbr>Expire<wbr>Ts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:2952</li>
+						<li>Defined in clients/client/src/models/models_0.ts:3048</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A number representing time since UNIX epoch (in milliseconds).</p>
+						<p>Timestamp (in milliseconds) at which the token expires.</p>
 					</div>
 				</div>
 			</section>

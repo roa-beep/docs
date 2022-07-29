@@ -46,7 +46,7 @@
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
-			<a href="setupidentityinput.html#identitytoken" class="tsd-kind-icon">identity<wbr>Token</a>
+			<a href="setupidentityinput.html#existingidentitytoken" class="tsd-kind-icon">existing<wbr>Identity<wbr>Token</a>
 		</li>
 	</ul>
 </nav>
@@ -72,7 +72,7 @@
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="setupidentityinput.html#identitytoken" class="tsd-kind-icon">identity<wbr>Token</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="setupidentityinput.html#existingidentitytoken" class="tsd-kind-icon">existing<wbr>Identity<wbr>Token</a></li>
 						</ul>
 					</section>
 				</div>
@@ -81,17 +81,19 @@
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-				<a name="identitytoken" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> identity<wbr>Token</h3>
-				<div class="tsd-signature tsd-kind-icon">identity<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+				<a name="existingidentitytoken" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> existing<wbr>Identity<wbr>Token</h3>
+				<div class="tsd-signature tsd-kind-icon">existing<wbr>Identity<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:2928</li>
+						<li>Defined in clients/client/src/models/models_0.ts:3008</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A JSON Web Token.</p>
+						<p>Token returned from previous call to
+							<code>rivet.api.identity#SetupIdentity</code>. If this token is invalid, a new
+						identity will be returned.</p>
 					</div>
 				</div>
 			</section>

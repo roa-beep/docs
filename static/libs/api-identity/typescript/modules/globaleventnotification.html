@@ -64,7 +64,28 @@
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>A notification for a given global event.</p>
+					<p>Notifications represent information that should be presented to the user
+						immediately.
+					At the moment, only chat message events have associated notifications.</p>
+					<a href="#display" id="display" style="color: inherit; text-decoration: none;">
+						<h1>Display</h1>
+					</a>
+					<p>Notifications should be displayed in an unobtrusive manner throughout the
+						entire game. Notifications should disappear after a few seconds if not
+					interacted with.</p>
+					<a href="#interactions" id="interactions" style="color: inherit; text-decoration: none;">
+						<h1>Interactions</h1>
+					</a>
+					<p>If your platform supports it, notifications should be able to be clicked or
+						tapped in order to open the relevant context for the event.
+						For a simple implementation of notification interactions, open <code>url</code> in a
+						web browser to present the relevant context. For example, a chat message
+						notification will open the thread the chat message was sent in.
+						For advanced implementations that implement a custom chat UI, use
+						<code>rivet.api.identity.common#GlobalEvent$kind</code> to determine what action to
+						take when the notification is interacted with. For example, if the global
+						event kind is <code>rivet.api.identity.common#GlobalEventChatMessage</code>, then open
+					the chat UI for the given thread.</p>
 				</div>
 			</div>
 		</section>
@@ -92,14 +113,9 @@
 				<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1974</li>
+						<li>Defined in clients/client/src/models/models_0.ts:2010</li>
 					</ul>
 				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>The notification description.</p>
-					</div>
-				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
 				<a name="thumbnailurl" class="tsd-anchor"></a>
@@ -107,12 +123,12 @@
 				<div class="tsd-signature tsd-kind-icon">thumbnail<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1979</li>
+						<li>Defined in clients/client/src/models/models_0.ts:2014</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The notification thumbnail URL.</p>
+						<p>URL to an image thumbnail that should be shown for this notification.</p>
 					</div>
 				</div>
 			</section>
@@ -122,14 +138,9 @@
 				<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1969</li>
+						<li>Defined in clients/client/src/models/models_0.ts:2009</li>
 					</ul>
 				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>The notification title.</p>
-					</div>
-				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
 				<a name="url" class="tsd-anchor"></a>
@@ -137,12 +148,12 @@
 				<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1984</li>
+						<li>Defined in clients/client/src/models/models_0.ts:2019</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The notification click URL.</p>
+						<p>Rivet Hub URL that holds the relevant context for this notification.</p>
 					</div>
 				</div>
 			</section>

@@ -49,7 +49,13 @@
 			<a href="createpartyinput.html#invites" class="tsd-kind-icon">invites</a>
 		</li>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
+			<a href="createpartyinput.html#matchmakercurrentplayertoken" class="tsd-kind-icon">matchmaker<wbr>Current<wbr>Player<wbr>Token</a>
+		</li>
+		<li class=" tsd-kind-property tsd-parent-kind-namespace">
 			<a href="createpartyinput.html#partysize" class="tsd-kind-icon">party<wbr>Size</a>
+		</li>
+		<li class=" tsd-kind-property tsd-parent-kind-namespace">
+			<a href="createpartyinput.html#publicity" class="tsd-kind-icon">publicity</a>
 		</li>
 	</ul>
 </nav>
@@ -76,7 +82,9 @@
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="createpartyinput.html#invites" class="tsd-kind-icon">invites</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="createpartyinput.html#matchmakercurrentplayertoken" class="tsd-kind-icon">matchmaker<wbr>Current<wbr>Player<wbr>Token</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="createpartyinput.html#partysize" class="tsd-kind-icon">party<wbr>Size</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="createpartyinput.html#publicity" class="tsd-kind-icon">publicity</a></li>
 						</ul>
 					</section>
 				</div>
@@ -90,12 +98,25 @@
 				<div class="tsd-signature tsd-kind-icon">invites<span class="tsd-signature-symbol">:</span> <a href="createpartyinviteconfig.html" class="tsd-signature-type">CreatePartyInviteConfig</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:37</li>
+						<li>Defined in clients/client/src/models/models_0.ts:87</li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
+				<a name="matchmakercurrentplayertoken" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> matchmaker<wbr>Current<wbr>Player<wbr>Token</h3>
+				<div class="tsd-signature tsd-kind-icon">matchmaker<wbr>Current<wbr>Player<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in clients/client/src/models/models_0.ts:95</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A list of configurations for creating party invites.</p>
+						<p>If the player is currently in the lobby, pass the token from
+							<code>rivet.matchmaker#MatchmakerLobbyJoinInfoPlayer$token</code>.
+							This will prevent issuing a new player token and automatically set the
+						party state to the player&#39;s current lobby.</p>
 					</div>
 				</div>
 			</section>
@@ -105,12 +126,31 @@
 				<div class="tsd-signature tsd-kind-icon">party<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:32</li>
+						<li>Defined in clients/client/src/models/models_0.ts:78</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>How many people the party can fit.</p>
+						<p>How many members can join the party.
+							If using this party with the matchmaker, this number should be less than
+							or equal to your party player limit. Super large parties may not be able
+						to fit insite a lobby and be unable to join the game.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
+				<a name="publicity" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> publicity</h3>
+				<div class="tsd-signature tsd-kind-icon">publicity<span class="tsd-signature-symbol">:</span> <a href="createpartypublicityconfig.html" class="tsd-signature-type">CreatePartyPublicityConfig</a></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in clients/client/src/models/models_0.ts:85</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Publicity configuration for creating a party.
+						Null values will default</p>
 					</div>
 				</div>
 			</section>

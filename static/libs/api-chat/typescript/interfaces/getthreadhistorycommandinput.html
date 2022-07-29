@@ -104,12 +104,14 @@
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="../modules/getthreadhistoryinput.html">GetThreadHistoryInput</a>.<a href="../modules/getthreadhistoryinput.html#count">count</a></p>
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:38</li>
+						<li>Defined in clients/client/src/models/models_0.ts:42</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>How many messages to collect in each direction.</p>
+						<p>How many messages to collect in each direction.
+							If querying <code>rivet.api.chat.common#QueryDirection$before_and_after</code>,
+						<code>rivet.api.chat.common#QueryDirection$chat_messages</code> will be <code>count * 2</code>.</p>
 					</div>
 				</div>
 			</section>
@@ -120,12 +122,13 @@
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="../modules/getthreadhistoryinput.html">GetThreadHistoryInput</a>.<a href="../modules/getthreadhistoryinput.html#querydirection">queryDirection</a></p>
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:43</li>
+						<li>Defined in clients/client/src/models/models_0.ts:48</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A value representing the direction relative to a given timestamp for which to query chat messages.</p>
+						<p>Represents which direction to query messages from relative to the given
+						timestamp.</p>
 					</div>
 				</div>
 			</section>

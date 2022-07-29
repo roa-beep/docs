@@ -70,6 +70,9 @@
 					<a href="matchmakerservice.html#listlobbies" class="tsd-kind-icon">list<wbr>Lobbies</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="matchmakerservice.html#listregions" class="tsd-kind-icon">list<wbr>Regions</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="matchmakerservice.html#lobbyready" class="tsd-kind-icon">lobby<wbr>Ready</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -77,9 +80,6 @@
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="matchmakerservice.html#playerdisconnected" class="tsd-kind-icon">player<wbr>Disconnected</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="matchmakerservice.html#recommendregions" class="tsd-kind-icon">recommend<wbr>Regions</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
 					<a href="matchmakerservice.html#send" class="tsd-kind-icon">send</a>
@@ -136,10 +136,10 @@
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="matchmakerservice.html#findlobby" class="tsd-kind-icon">find<wbr>Lobby</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="matchmakerservice.html#joinlobby" class="tsd-kind-icon">join<wbr>Lobby</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="matchmakerservice.html#listlobbies" class="tsd-kind-icon">list<wbr>Lobbies</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="matchmakerservice.html#listregions" class="tsd-kind-icon">list<wbr>Regions</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="matchmakerservice.html#lobbyready" class="tsd-kind-icon">lobby<wbr>Ready</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="matchmakerservice.html#playerconnected" class="tsd-kind-icon">player<wbr>Connected</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="matchmakerservice.html#playerdisconnected" class="tsd-kind-icon">player<wbr>Disconnected</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="matchmakerservice.html#recommendregions" class="tsd-kind-icon">recommend<wbr>Regions</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="matchmakerservice.html#send" class="tsd-kind-icon">send</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="matchmakerservice.html#setlobbyclosed" class="tsd-kind-icon">set<wbr>Lobby<wbr>Closed</a></li>
 						</ul>
@@ -246,13 +246,14 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:49</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:51</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Returns a lobby based on the given input criteria.</p>
+								<p>Finds a lobby based on the given criteria.</p>
 							</div>
+							<p>If a lobby is not found and <code>prevent_auto_create_lobby</code> is <code>true</code>, a new lobby will be created.</p>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
@@ -268,12 +269,13 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:53</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:55</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Returns a lobby based on the given input criteria.</p>
+								<p>Finds a lobby based on the given criteria.
+								If a lobby is not found and <code>prevent_auto_create_lobby</code> is <code>true</code>, a new lobby will be created.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -311,12 +313,13 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:57</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:59</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Returns a lobby based on the given input criteria.</p>
+								<p>Finds a lobby based on the given criteria.
+								If a lobby is not found and <code>prevent_auto_create_lobby</code> is <code>true</code>, a new lobby will be created.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -368,13 +371,15 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:82</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:87</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
 								<p>Joins a specific lobby.</p>
 							</div>
+							<p>This request will use the direct player count configured for the lobby
+							group.</p>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
@@ -390,12 +395,14 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:86</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:91</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Joins a specific lobby.</p>
+								<p>Joins a specific lobby.
+									This request will use the direct player count configured for the lobby
+								group.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -433,12 +440,14 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:90</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:95</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Joins a specific lobby.</p>
+								<p>Joins a specific lobby.
+									This request will use the direct player count configured for the lobby
+								group.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -490,7 +499,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:115</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:120</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -512,7 +521,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:119</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:124</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -555,7 +564,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:123</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:128</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -601,6 +610,134 @@
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="listregions" class="tsd-anchor"></a>
+				<h3>list<wbr>Regions</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">list<wbr>Regions<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/listregionscommandinput.html" class="tsd-signature-type">ListRegionsCommandInput</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/listregionscommandoutput.html" class="tsd-signature-type">ListRegionsCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">list<wbr>Regions<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/listregionscommandinput.html" class="tsd-signature-type">ListRegionsCommandInput</a>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/listregionscommandoutput.html" class="tsd-signature-type">ListRegionsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">list<wbr>Regions<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/listregionscommandinput.html" class="tsd-signature-type">ListRegionsCommandInput</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/listregionscommandoutput.html" class="tsd-signature-type">ListRegionsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in clients/client/src/MatchmakerService.ts:156</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns a list of regions available to this namespace.</p>
+							</div>
+							<p>Regions are sorted by most optimal to least optimal. The player&#39;s IP address
+							is used to calculate the regions&#39; optimality.</p>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <a href="../interfaces/listregionscommandinput.html" class="tsd-signature-type">ListRegionsCommandInput</a></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/listregionscommandoutput.html" class="tsd-signature-type">ListRegionsCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in clients/client/src/MatchmakerService.ts:160</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns a list of regions available to this namespace.
+									Regions are sorted by most optimal to least optimal. The player&#39;s IP address
+								is used to calculate the regions&#39; optimality.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <a href="../interfaces/listregionscommandinput.html" class="tsd-signature-type">ListRegionsCommandInput</a></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/listregionscommandoutput.html" class="tsd-signature-type">ListRegionsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/listregionscommandoutput.html" class="tsd-signature-type">ListRegionsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/listregionscommandoutput.html" class="tsd-signature-type">ListRegionsCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in clients/client/src/MatchmakerService.ts:164</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns a list of regions available to this namespace.
+									Regions are sorted by most optimal to least optimal. The player&#39;s IP address
+								is used to calculate the regions&#39; optimality.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <a href="../interfaces/listregionscommandinput.html" class="tsd-signature-type">ListRegionsCommandInput</a></h5>
+							</li>
+							<li>
+								<h5>options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/listregionscommandoutput.html" class="tsd-signature-type">ListRegionsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/listregionscommandoutput.html" class="tsd-signature-type">ListRegionsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/listregionscommandoutput.html" class="tsd-signature-type">ListRegionsCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 				<a name="lobbyready" class="tsd-anchor"></a>
 				<h3>lobby<wbr>Ready</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -612,12 +749,13 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:148</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:190</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Marks the current lobby as ready to accept connections.</p>
+								<p>Marks the current lobby as ready to accept connections. Players will not be
+								able to connect to this lobby until the lobby is flagged as ready.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -634,12 +772,13 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:152</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:194</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Marks the current lobby as ready to accept connections.</p>
+								<p>Marks the current lobby as ready to accept connections. Players will not be
+								able to connect to this lobby until the lobby is flagged as ready.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -677,12 +816,13 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:156</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:198</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Marks the current lobby as ready to accept connections.</p>
+								<p>Marks the current lobby as ready to accept connections. Players will not be
+								able to connect to this lobby until the lobby is flagged as ready.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -734,13 +874,48 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:181</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:262</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Marks a player as connected.</p>
+								<p>Validates the player token is valid and has not already been consumed then
+								marks the player as connected.</p>
 							</div>
+							<a href="#player-tokens-and-reserved-slots" id="player-tokens-and-reserved-slots" style="color: inherit; text-decoration: none;">
+								<h1>Player Tokens and Reserved Slots</h1>
+							</a>
+							<p>Player tokens reserve a spot in the lobby until they expire. This allows for
+								precise matchmaking up to exactly the lobby&#39;s player limit, which is
+							important for games with small lobbies and a high influx of players.</p>
+							<p>By calling this endpoint with the player token, the player&#39;s spot is marked
+								as connected and will not expire. If this endpoint is never called, the
+							player&#39;s token will expire and this spot will be filled by another player.</p>
+							<a href="#anti-botting" id="anti-botting" style="color: inherit; text-decoration: none;">
+								<h1>Anti-Botting</h1>
+							</a>
+							<p>Player tokens are only issued by caling <code>rivet.api.matchmaker#JoinLobby</code>, calling <code>rivet.api.matchmaker#FindLobby</code>, or
+								from the <code>rivet.api.identity.common#GlobalEventMatchmakerLobbyJoin</code> event.
+								These endpoints have anti-botting measures (i.e. enforcing max player
+								limits, captchas, and detecting bots), so valid player tokens provide some
+							confidence that the player is not a bot.</p>
+							<p>Therefore, it&#39;s important to make sure the token is valid by waiting for
+								this endpoint to return OK before allowing the connected socket to do
+								anything else. If this endpoint returns an error, the socket should be
+							disconnected immediately.</p>
+							<a href="#how-to-transmit-the-player-token" id="how-to-transmit-the-player-token" style="color: inherit; text-decoration: none;">
+								<h1>How to Transmit the Player Token</h1>
+							</a>
+							<p>The client is responsible for acquiring the player token by caling
+								<code>rivet.api.matchmaker#JoinLobby</code>, calling <code>rivet.api.matchmaker#FindLobby</code>,
+								or from the <code>rivet.api.identity.common#GlobalEventMatchmakerLobbyJoin</code>
+								event.  Beyond that, it&#39;s up to the developer how the player token is
+							transmitted to the lobby.</p>
+							<p>If using WebSockets, the player token can be transmitted as a query
+							paramter.</p>
+							<p>Otherwise, the player token will likely be automatically sent by the client
+								once the socket opens. As mentioned above, nothing else should happen until
+							the player token is validated.</p>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
@@ -756,12 +931,47 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:185</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:266</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Marks a player as connected.</p>
+								<p>Validates the player token is valid and has not already been consumed then
+								marks the player as connected.</p>
+								<a href="#player-tokens-and-reserved-slots" id="player-tokens-and-reserved-slots" style="color: inherit; text-decoration: none;">
+									<h1>Player Tokens and Reserved Slots</h1>
+								</a>
+								<p>Player tokens reserve a spot in the lobby until they expire. This allows for
+									precise matchmaking up to exactly the lobby&#39;s player limit, which is
+									important for games with small lobbies and a high influx of players.
+									By calling this endpoint with the player token, the player&#39;s spot is marked
+									as connected and will not expire. If this endpoint is never called, the
+								player&#39;s token will expire and this spot will be filled by another player.</p>
+								<a href="#anti-botting" id="anti-botting" style="color: inherit; text-decoration: none;">
+									<h1>Anti-Botting</h1>
+								</a>
+								<p>Player tokens are only issued by caling <code>rivet.api.matchmaker#JoinLobby</code>, calling <code>rivet.api.matchmaker#FindLobby</code>, or
+									from the <code>rivet.api.identity.common#GlobalEventMatchmakerLobbyJoin</code> event.
+									These endpoints have anti-botting measures (i.e. enforcing max player
+									limits, captchas, and detecting bots), so valid player tokens provide some
+									confidence that the player is not a bot.
+									Therefore, it&#39;s important to make sure the token is valid by waiting for
+									this endpoint to return OK before allowing the connected socket to do
+									anything else. If this endpoint returns an error, the socket should be
+								disconnected immediately.</p>
+								<a href="#how-to-transmit-the-player-token" id="how-to-transmit-the-player-token" style="color: inherit; text-decoration: none;">
+									<h1>How to Transmit the Player Token</h1>
+								</a>
+								<p>The client is responsible for acquiring the player token by caling
+									<code>rivet.api.matchmaker#JoinLobby</code>, calling <code>rivet.api.matchmaker#FindLobby</code>,
+									or from the <code>rivet.api.identity.common#GlobalEventMatchmakerLobbyJoin</code>
+									event.  Beyond that, it&#39;s up to the developer how the player token is
+									transmitted to the lobby.
+									If using WebSockets, the player token can be transmitted as a query
+									paramter.
+									Otherwise, the player token will likely be automatically sent by the client
+									once the socket opens. As mentioned above, nothing else should happen until
+								the player token is validated.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -799,12 +1009,47 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:189</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:270</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Marks a player as connected.</p>
+								<p>Validates the player token is valid and has not already been consumed then
+								marks the player as connected.</p>
+								<a href="#player-tokens-and-reserved-slots" id="player-tokens-and-reserved-slots" style="color: inherit; text-decoration: none;">
+									<h1>Player Tokens and Reserved Slots</h1>
+								</a>
+								<p>Player tokens reserve a spot in the lobby until they expire. This allows for
+									precise matchmaking up to exactly the lobby&#39;s player limit, which is
+									important for games with small lobbies and a high influx of players.
+									By calling this endpoint with the player token, the player&#39;s spot is marked
+									as connected and will not expire. If this endpoint is never called, the
+								player&#39;s token will expire and this spot will be filled by another player.</p>
+								<a href="#anti-botting" id="anti-botting" style="color: inherit; text-decoration: none;">
+									<h1>Anti-Botting</h1>
+								</a>
+								<p>Player tokens are only issued by caling <code>rivet.api.matchmaker#JoinLobby</code>, calling <code>rivet.api.matchmaker#FindLobby</code>, or
+									from the <code>rivet.api.identity.common#GlobalEventMatchmakerLobbyJoin</code> event.
+									These endpoints have anti-botting measures (i.e. enforcing max player
+									limits, captchas, and detecting bots), so valid player tokens provide some
+									confidence that the player is not a bot.
+									Therefore, it&#39;s important to make sure the token is valid by waiting for
+									this endpoint to return OK before allowing the connected socket to do
+									anything else. If this endpoint returns an error, the socket should be
+								disconnected immediately.</p>
+								<a href="#how-to-transmit-the-player-token" id="how-to-transmit-the-player-token" style="color: inherit; text-decoration: none;">
+									<h1>How to Transmit the Player Token</h1>
+								</a>
+								<p>The client is responsible for acquiring the player token by caling
+									<code>rivet.api.matchmaker#JoinLobby</code>, calling <code>rivet.api.matchmaker#FindLobby</code>,
+									or from the <code>rivet.api.identity.common#GlobalEventMatchmakerLobbyJoin</code>
+									event.  Beyond that, it&#39;s up to the developer how the player token is
+									transmitted to the lobby.
+									If using WebSockets, the player token can be transmitted as a query
+									paramter.
+									Otherwise, the player token will likely be automatically sent by the client
+									once the socket opens. As mentioned above, nothing else should happen until
+								the player token is validated.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -856,13 +1101,19 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:214</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:301</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
 								<p>Marks a player as disconnected.</p>
 							</div>
+							<a href="#ghost-players" id="ghost-players" style="color: inherit; text-decoration: none;">
+								<h1>Ghost Players</h1>
+							</a>
+							<p>If players are not marked as disconnected, lobbies will result with &quot;ghost
+								players&quot; that the matchmaker thinks exist but are no longer connected to the
+							lobby.</p>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
@@ -878,12 +1129,18 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:218</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:305</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
 								<p>Marks a player as disconnected.</p>
+								<a href="#ghost-players" id="ghost-players" style="color: inherit; text-decoration: none;">
+									<h1>Ghost Players</h1>
+								</a>
+								<p>If players are not marked as disconnected, lobbies will result with &quot;ghost
+									players&quot; that the matchmaker thinks exist but are no longer connected to the
+								lobby.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -921,12 +1178,18 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:222</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:309</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
 								<p>Marks a player as disconnected.</p>
+								<a href="#ghost-players" id="ghost-players" style="color: inherit; text-decoration: none;">
+									<h1>Ghost Players</h1>
+								</a>
+								<p>If players are not marked as disconnected, lobbies will result with &quot;ghost
+									players&quot; that the matchmaker thinks exist but are no longer connected to the
+								lobby.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -953,128 +1216,6 @@
 													</li>
 													<li>
 														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/playerdisconnectedcommandoutput.html" class="tsd-signature-type">PlayerDisconnectedCommandOutput</a></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="recommendregions" class="tsd-anchor"></a>
-				<h3>recommend<wbr>Regions</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">recommend<wbr>Regions<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/recommendregionscommandinput.html" class="tsd-signature-type">RecommendRegionsCommandInput</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/recommendregionscommandoutput.html" class="tsd-signature-type">RecommendRegionsCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></li>
-					<li class="tsd-signature tsd-kind-icon">recommend<wbr>Regions<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/recommendregionscommandinput.html" class="tsd-signature-type">RecommendRegionsCommandInput</a>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/recommendregionscommandoutput.html" class="tsd-signature-type">RecommendRegionsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					<li class="tsd-signature tsd-kind-icon">recommend<wbr>Regions<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/recommendregionscommandinput.html" class="tsd-signature-type">RecommendRegionsCommandInput</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/recommendregionscommandoutput.html" class="tsd-signature-type">RecommendRegionsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:247</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Returns a list of recommened regions in order of ping.</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>args: <a href="../interfaces/recommendregionscommandinput.html" class="tsd-signature-type">RecommendRegionsCommandInput</a></h5>
-							</li>
-							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/recommendregionscommandoutput.html" class="tsd-signature-type">RecommendRegionsCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:251</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Returns a list of recommened regions in order of ping.</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>args: <a href="../interfaces/recommendregionscommandinput.html" class="tsd-signature-type">RecommendRegionsCommandInput</a></h5>
-							</li>
-							<li>
-								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/recommendregionscommandoutput.html" class="tsd-signature-type">RecommendRegionsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/recommendregionscommandoutput.html" class="tsd-signature-type">RecommendRegionsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>err: <span class="tsd-signature-type">any</span></h5>
-													</li>
-													<li>
-														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/recommendregionscommandoutput.html" class="tsd-signature-type">RecommendRegionsCommandOutput</a></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:255</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Returns a list of recommened regions in order of ping.</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>args: <a href="../interfaces/recommendregionscommandinput.html" class="tsd-signature-type">RecommendRegionsCommandInput</a></h5>
-							</li>
-							<li>
-								<h5>options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
-							</li>
-							<li>
-								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/recommendregionscommandoutput.html" class="tsd-signature-type">RecommendRegionsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/recommendregionscommandoutput.html" class="tsd-signature-type">RecommendRegionsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>err: <span class="tsd-signature-type">any</span></h5>
-													</li>
-													<li>
-														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/recommendregionscommandoutput.html" class="tsd-signature-type">RecommendRegionsCommandOutput</a></h5>
 													</li>
 												</ul>
 												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1237,13 +1378,14 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:280</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:336</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Updated the current lobby&#39;s &quot;closed&quot; state. Does not shutdown the lobby.</p>
+								<p>If <code>is_closed</code> is <code>true</code>, players will be prevented from joining the lobby.</p>
 							</div>
+							<p>Does not shutdown the lobby.</p>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
@@ -1259,12 +1401,13 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:284</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:340</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Updated the current lobby&#39;s &quot;closed&quot; state. Does not shutdown the lobby.</p>
+								<p>If <code>is_closed</code> is <code>true</code>, players will be prevented from joining the lobby.
+								Does not shutdown the lobby.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1302,12 +1445,13 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/MatchmakerService.ts:288</li>
+								<li>Defined in clients/client/src/MatchmakerService.ts:344</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Updated the current lobby&#39;s &quot;closed&quot; state. Does not shutdown the lobby.</p>
+								<p>If <code>is_closed</code> is <code>true</code>, players will be prevented from joining the lobby.
+								Does not shutdown the lobby.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>

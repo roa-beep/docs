@@ -90,12 +90,17 @@
 				<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:181</li>
+						<li>Defined in clients/client/src/models/models_0.ts:201</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A string reprenting a key in the KV database.</p>
+						<p>A string reprenting a key in the key-value database.
+							Key path components are split by a slash (e.g. <code>a/b/c</code> has the path
+							components <code>[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]</code>). Slashes can be escaped by using a forward
+							slash (e.g. <code>a/b\/c/d</code> has the path components <code>[&quot;a&quot;, &quot;b/c&quot;, &quot;d&quot;]</code>).
+							See <code>rivet.api.kv.common#KeyComponents</code> for the structure of a
+						<code>rivet.api.kv.common#Key</code> split by <code>/</code>.</p>
 					</div>
 				</div>
 			</section>
@@ -105,7 +110,7 @@
 				<div class="tsd-signature tsd-kind-icon">namespace<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:186</li>
+						<li>Defined in clients/client/src/models/models_0.ts:206</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">

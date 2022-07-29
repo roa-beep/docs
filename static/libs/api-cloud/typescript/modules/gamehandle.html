@@ -52,7 +52,7 @@
 			<a href="gamehandle.html#displayname" class="tsd-kind-icon">display<wbr>Name</a>
 		</li>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
-			<a href="gamehandle.html#id" class="tsd-kind-icon">id</a>
+			<a href="gamehandle.html#gameid" class="tsd-kind-icon">game<wbr>Id</a>
 		</li>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
 			<a href="gamehandle.html#logourl" class="tsd-kind-icon">logo<wbr>Url</a>
@@ -80,7 +80,7 @@
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="gamehandle.html#bannerurl" class="tsd-kind-icon">banner<wbr>Url</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="gamehandle.html#displayname" class="tsd-kind-icon">display<wbr>Name</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="gamehandle.html#id" class="tsd-kind-icon">id</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="gamehandle.html#gameid" class="tsd-kind-icon">game<wbr>Id</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="gamehandle.html#logourl" class="tsd-kind-icon">logo<wbr>Url</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="gamehandle.html#nameid" class="tsd-kind-icon">name<wbr>Id</a></li>
 						</ul>
@@ -96,7 +96,7 @@
 				<div class="tsd-signature tsd-kind-icon">banner<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:3144</li>
+						<li>Defined in clients/client/src/models/models_0.ts:3230</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -111,7 +111,7 @@
 				<div class="tsd-signature tsd-kind-icon">display<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:3134</li>
+						<li>Defined in clients/client/src/models/models_0.ts:3220</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -121,12 +121,12 @@
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-				<a name="id" class="tsd-anchor"></a>
-				<h3>id</h3>
-				<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+				<a name="gameid" class="tsd-anchor"></a>
+				<h3>game<wbr>Id</h3>
+				<div class="tsd-signature tsd-kind-icon">game<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:3124</li>
+						<li>Defined in clients/client/src/models/models_0.ts:3205</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -141,7 +141,7 @@
 				<div class="tsd-signature tsd-kind-icon">logo<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:3139</li>
+						<li>Defined in clients/client/src/models/models_0.ts:3225</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -156,12 +156,15 @@
 				<div class="tsd-signature tsd-kind-icon">name<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:3129</li>
+						<li>Defined in clients/client/src/models/models_0.ts:3215</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Represents a resource&#39;s identifier.</p>
+						<p>A human readable short identifier used to references resources.
+							Different than a <code>rivet.common#Uuid</code> because this is intended to be human readable.
+							Different than <code>rivet.common#DisplayName</code> because this should not include special
+						characters and be short.</p>
 					</div>
 				</div>
 			</section>

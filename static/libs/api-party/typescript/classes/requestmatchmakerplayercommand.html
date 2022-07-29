@@ -63,6 +63,56 @@
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
+		<section class="tsd-panel tsd-comment">
+			<div class="tsd-comment tsd-typography">
+				<div class="lead">
+					<p>Attempts to create a new matchmaker player for the current identity.
+						If succeeds, the identity will receive a <code>GlobalEventMatchmakerLobbyJoin</code>
+						event with all the information required to join the lobby.
+					Only relevant if the party is already in a matchmaker lobby.</p>
+					<a href="#when-to-use-this-endpoint" id="when-to-use-this-endpoint" style="color: inherit; text-decoration: none;">
+						<h1>When To Use This Endpoint</h1>
+					</a>
+					<a href="#joining-a-party-already-in-a-lobby" id="joining-a-party-already-in-a-lobby" style="color: inherit; text-decoration: none;">
+						<h2>Joining a Party Already In a Lobby</h2>
+					</a>
+					<p>When an identity joins a party that&#39;s already in a lobby, a new matchmaker
+						player will not automatically be created unless
+					<code>JoinParty#matchmaker_auto_join_lobby</code> is set to <code>true</code>.</p>
+					<a href="#leaving-the-game-and-returning" id="leaving-the-game-and-returning" style="color: inherit; text-decoration: none;">
+						<h2>Leaving the Game and Returning</h2>
+					</a>
+					<p>If the user leaves the game and comes back but is still in the party, then
+					they will have to create a new matchmaker player.</p>
+					<a href="#failed-to-connect-to-lobby-or-disconnected-from-lobby" id="failed-to-connect-to-lobby-or-disconnected-from-lobby" style="color: inherit; text-decoration: none;">
+						<h2>Failed to Connect to Lobby or Disconnected From Lobby</h2>
+					</a>
+					<p>If the user failed to establish a connection with the lobby or they got
+						disconnected, their matchmaker player will be removed. Use this endpoint to
+					create a new matchmaker player.</p>
+				</div>
+				<dl class="tsd-comment-tags">
+					<dt>example</dt>
+					<dd><p>Use a bare-bones client and the command you need to make an API call.</p>
+						<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { PartyServiceClient, RequestMatchmakerPlayerCommand } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@rivet-gg/party&quot;</span>; <span class="hljs-comment">// ES Modules import</span>
+<span class="hljs-comment">// const { PartyServiceClient, RequestMatchmakerPlayerCommand } = require(&quot;@rivet-gg/party&quot;); // CommonJS import</span>
+<span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> PartyServiceClient(config);
+<span class="hljs-keyword">const</span> command = <span class="hljs-keyword">new</span> RequestMatchmakerPlayerCommand(input);
+<span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> client.send(command);
+</code></pre>
+					</dd>
+					<dt>see</dt>
+					<dd><p><a href="../interfaces/requestmatchmakerplayercommandinput.html">RequestMatchmakerPlayerCommandInput</a> for command&#39;s <code>input</code> shape.</p>
+					</dd>
+					<dt>see</dt>
+					<dd><p><a href="../interfaces/requestmatchmakerplayercommandoutput.html">RequestMatchmakerPlayerCommandOutput</a> for command&#39;s <code>response</code> shape.</p>
+					</dd>
+					<dt>see</dt>
+					<dd><p><a href="../interfaces/partyserviceclientresolvedconfig.html">config</a> for PartyServiceClient&#39;s <code>config</code> shape.</p>
+					</dd>
+				</dl>
+			</div>
+		</section>
 		<section class="tsd-panel tsd-hierarchy">
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
@@ -114,7 +164,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/commands/RequestMatchmakerPlayerCommand.ts:34</li>
+								<li>Defined in clients/client/src/commands/RequestMatchmakerPlayerCommand.ts:75</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -137,7 +187,7 @@
 				<aside class="tsd-sources">
 					<p>Overrides Command.input</p>
 					<ul>
-						<li>Defined in clients/client/src/commands/RequestMatchmakerPlayerCommand.ts:38</li>
+						<li>Defined in clients/client/src/commands/RequestMatchmakerPlayerCommand.ts:79</li>
 					</ul>
 				</aside>
 			</section>

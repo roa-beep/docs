@@ -66,7 +66,42 @@
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Marks a player as connected.</p>
+					<p>Validates the player token is valid and has not already been consumed then
+					marks the player as connected.</p>
+					<a href="#player-tokens-and-reserved-slots" id="player-tokens-and-reserved-slots" style="color: inherit; text-decoration: none;">
+						<h1>Player Tokens and Reserved Slots</h1>
+					</a>
+					<p>Player tokens reserve a spot in the lobby until they expire. This allows for
+						precise matchmaking up to exactly the lobby&#39;s player limit, which is
+						important for games with small lobbies and a high influx of players.
+						By calling this endpoint with the player token, the player&#39;s spot is marked
+						as connected and will not expire. If this endpoint is never called, the
+					player&#39;s token will expire and this spot will be filled by another player.</p>
+					<a href="#anti-botting" id="anti-botting" style="color: inherit; text-decoration: none;">
+						<h1>Anti-Botting</h1>
+					</a>
+					<p>Player tokens are only issued by caling <code>rivet.api.matchmaker#JoinLobby</code>, calling <code>rivet.api.matchmaker#FindLobby</code>, or
+						from the <code>rivet.api.identity.common#GlobalEventMatchmakerLobbyJoin</code> event.
+						These endpoints have anti-botting measures (i.e. enforcing max player
+						limits, captchas, and detecting bots), so valid player tokens provide some
+						confidence that the player is not a bot.
+						Therefore, it&#39;s important to make sure the token is valid by waiting for
+						this endpoint to return OK before allowing the connected socket to do
+						anything else. If this endpoint returns an error, the socket should be
+					disconnected immediately.</p>
+					<a href="#how-to-transmit-the-player-token" id="how-to-transmit-the-player-token" style="color: inherit; text-decoration: none;">
+						<h1>How to Transmit the Player Token</h1>
+					</a>
+					<p>The client is responsible for acquiring the player token by caling
+						<code>rivet.api.matchmaker#JoinLobby</code>, calling <code>rivet.api.matchmaker#FindLobby</code>,
+						or from the <code>rivet.api.identity.common#GlobalEventMatchmakerLobbyJoin</code>
+						event.  Beyond that, it&#39;s up to the developer how the player token is
+						transmitted to the lobby.
+						If using WebSockets, the player token can be transmitted as a query
+						paramter.
+						Otherwise, the player token will likely be automatically sent by the client
+						once the socket opens. As mentioned above, nothing else should happen until
+					the player token is validated.</p>
 				</div>
 				<dl class="tsd-comment-tags">
 					<dt>example</dt>
@@ -141,7 +176,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/commands/PlayerConnectedCommand.ts:51</li>
+								<li>Defined in clients/client/src/commands/PlayerConnectedCommand.ts:90</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -164,7 +199,7 @@
 				<aside class="tsd-sources">
 					<p>Overrides Command.input</p>
 					<ul>
-						<li>Defined in clients/client/src/commands/PlayerConnectedCommand.ts:55</li>
+						<li>Defined in clients/client/src/commands/PlayerConnectedCommand.ts:94</li>
 					</ul>
 				</aside>
 			</section>

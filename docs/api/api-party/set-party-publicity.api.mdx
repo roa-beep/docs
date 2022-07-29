@@ -1,0 +1,55 @@
+---
+id: set-party-publicity
+sidebar_label: SetPartyPublicity
+hide_title: true
+hide_table_of_contents: true
+api: {"description":"Sets the publicity of a party.\n\nThis configures who can view and join the party.\n\nIdentity must be the party leader.","operationId":"SetPartyPublicity","requestBody":{"content":{"application/json":{"schema":{"type":"object","properties":{"public":{"type":"string","enum":["none","view","join"]},"friends":{"type":"string","enum":["none","view","join"]},"groups":{"type":"string","enum":["none","view","join"]}}}}}},"responses":{"200":{"description":"SetPartyPublicity 200 response"},"400":{"description":"BadRequestError 400 response","content":{"application/json":{"schema":{"type":"object","description":"An error thrown when the requestee has sent an invalid or malformed request.","properties":{"code":{"type":"string"},"message":{"type":"string"},"metadata":{"description":"Unstructured metadata relating to an error. Must be manually parsed."}},"required":["code","message"]}}}},"403":{"description":"ForbiddenError 403 response","content":{"application/json":{"schema":{"type":"object","description":"An error thrown when the requestee requests a resource they do not have access to.","properties":{"code":{"type":"string"},"message":{"type":"string"},"metadata":{"description":"Unstructured metadata relating to an error. Must be manually parsed."}},"required":["code","message"]}}}},"404":{"description":"NotFoundError 404 response","content":{"application/json":{"schema":{"type":"object","description":"An error thrown when the requestee requests a non existant resource.","properties":{"code":{"type":"string"},"message":{"type":"string"},"metadata":{"description":"Unstructured metadata relating to an error. Must be manually parsed."}},"required":["code","message"]}}}},"408":{"description":"UnauthorizedError 408 response","content":{"application/json":{"schema":{"type":"object","description":"An error thrown when the requestee is not authenticated.","properties":{"code":{"type":"string"},"message":{"type":"string"},"metadata":{"description":"Unstructured metadata relating to an error. Must be manually parsed."}},"required":["code","message"]}}}},"429":{"description":"RateLimitError 429 response","content":{"application/json":{"schema":{"type":"object","description":"An error thrown when the requestee has hit a rate limit. You are sending too many requests too quickly.","properties":{"code":{"type":"string"},"message":{"type":"string"},"metadata":{"description":"Unstructured metadata relating to an error. Must be manually parsed."}},"required":["code","message"]}}}},"500":{"description":"InternalError 500 response","content":{"application/json":{"schema":{"type":"object","description":"An error caused by internal server problems.","properties":{"code":{"type":"string"},"message":{"type":"string"},"metadata":{"description":"Unstructured metadata relating to an error. Must be manually parsed."}},"required":["message"]}}}}},"tags":["identity","portal"],"method":"put","path":"/parties/self/publicity","security":[{"smithy.api.httpBearerAuth":[]}],"securitySchemes":{"smithy.api.httpBearerAuth":{"type":"http","description":"HTTP Bearer authentication","scheme":"bearer"}},"jsonRequestBodyExample":{"public":"none","friends":"none","groups":"none"},"info":{"title":"Rivet Party API","version":"2022-02-03"},"postman":{"name":"Set Party Publicity","description":{"content":"Sets the publicity of a party.\n\nThis configures who can view and join the party.\n\nIdentity must be the party leader.","type":"text/plain"},"url":{"path":["parties","self","publicity"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Content-Type","value":"application/json"},{"key":"Accept","value":"application/json"}],"method":"PUT","body":{"mode":"raw","raw":"\"\"","options":{"raw":{"language":"json"}}}}}
+sidebar_class_name: "put api-method"
+info_path: docs/api/api-party/rivet-party-api
+---
+
+import ParamsItem from "@theme/ParamsItem";
+import SchemaItem from "@theme/SchemaItem"
+import ApiTabs from "@theme/ApiTabs";
+import TabItem from "@theme/TabItem";
+
+## SetPartyPublicity
+
+
+
+Sets the publicity of a party.
+
+This configures who can view and join the party.
+
+Identity must be the party leader.
+
+<details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Request Body</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"public"} required={false} schemaDescription={undefined} schemaName={"string"} qualifierMessage={"**Possible values:** [`none`, `view`, `join`]"}></SchemaItem><SchemaItem collapsible={false} name={"friends"} required={false} schemaDescription={undefined} schemaName={"string"} qualifierMessage={"**Possible values:** [`none`, `view`, `join`]"}></SchemaItem><SchemaItem collapsible={false} name={"groups"} required={false} schemaDescription={undefined} schemaName={"string"} qualifierMessage={"**Possible values:** [`none`, `view`, `join`]"}></SchemaItem></ul></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+SetPartyPublicity 200 response
+
+</div><div></div></TabItem><TabItem label={"400"} value={"400"}><div>
+
+BadRequestError 400 response
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"code"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"message"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"metadata"} required={false} schemaDescription={"Unstructured metadata relating to an error. Must be manually parsed."} schemaName={""} qualifierMessage={undefined}></SchemaItem></ul></details></div></TabItem><TabItem label={"403"} value={"403"}><div>
+
+ForbiddenError 403 response
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"code"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"message"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"metadata"} required={false} schemaDescription={"Unstructured metadata relating to an error. Must be manually parsed."} schemaName={""} qualifierMessage={undefined}></SchemaItem></ul></details></div></TabItem><TabItem label={"404"} value={"404"}><div>
+
+NotFoundError 404 response
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"code"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"message"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"metadata"} required={false} schemaDescription={"Unstructured metadata relating to an error. Must be manually parsed."} schemaName={""} qualifierMessage={undefined}></SchemaItem></ul></details></div></TabItem><TabItem label={"408"} value={"408"}><div>
+
+UnauthorizedError 408 response
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"code"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"message"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"metadata"} required={false} schemaDescription={"Unstructured metadata relating to an error. Must be manually parsed."} schemaName={""} qualifierMessage={undefined}></SchemaItem></ul></details></div></TabItem><TabItem label={"429"} value={"429"}><div>
+
+RateLimitError 429 response
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"code"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"message"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"metadata"} required={false} schemaDescription={"Unstructured metadata relating to an error. Must be manually parsed."} schemaName={""} qualifierMessage={undefined}></SchemaItem></ul></details></div></TabItem><TabItem label={"500"} value={"500"}><div>
+
+InternalError 500 response
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"code"} required={false} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"message"} required={true} schemaDescription={undefined} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"metadata"} required={false} schemaDescription={"Unstructured metadata relating to an error. Must be manually parsed."} schemaName={""} qualifierMessage={undefined}></SchemaItem></ul></details></div></TabItem></ApiTabs></div>
+      

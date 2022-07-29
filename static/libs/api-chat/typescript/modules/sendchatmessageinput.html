@@ -49,7 +49,7 @@
 			<a href="sendchatmessageinput.html#messagebody" class="tsd-kind-icon">message<wbr>Body</a>
 		</li>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
-			<a href="sendchatmessageinput.html#threadid" class="tsd-kind-icon">thread<wbr>Id</a>
+			<a href="sendchatmessageinput.html#topic" class="tsd-kind-icon">topic</a>
 		</li>
 	</ul>
 </nav>
@@ -76,7 +76,7 @@
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="sendchatmessageinput.html#messagebody" class="tsd-kind-icon">message<wbr>Body</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="sendchatmessageinput.html#threadid" class="tsd-kind-icon">thread<wbr>Id</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="sendchatmessageinput.html#topic" class="tsd-kind-icon">topic</a></li>
 						</ul>
 					</section>
 				</div>
@@ -90,27 +90,28 @@
 				<div class="tsd-signature tsd-kind-icon">message<wbr>Body<span class="tsd-signature-symbol">:</span> <a href="sendmessagebody.html" class="tsd-signature-type">SendMessageBody</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1396</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1593</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A union representing a message body used to send messages.</p>
+						<p>Data to send in a chat message.</p>
 					</div>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-				<a name="threadid" class="tsd-anchor"></a>
-				<h3>thread<wbr>Id</h3>
-				<div class="tsd-signature tsd-kind-icon">thread<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+				<a name="topic" class="tsd-anchor"></a>
+				<h3>topic</h3>
+				<div class="tsd-signature tsd-kind-icon">topic<span class="tsd-signature-symbol">:</span> <a href="sendchattopic.html" class="tsd-signature-type">SendChatTopic</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1391</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1588</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A universally unique identifier.</p>
+						<p>Topic to send a chat message to.
+						If you already know the thread ID, use <code>thread_id</code>.</p>
 					</div>
 				</div>
 			</section>

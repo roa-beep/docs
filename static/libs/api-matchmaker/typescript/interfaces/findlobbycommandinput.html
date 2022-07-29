@@ -108,12 +108,12 @@
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="../modules/findlobbyinput.html">FindLobbyInput</a>.<a href="../modules/findlobbyinput.html#captcha">captcha</a></p>
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:90</li>
+						<li>Defined in clients/client/src/models/models_0.ts:92</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A union of various captcha configurations.</p>
+						<p>Methods to verify a captcha.</p>
 					</div>
 				</div>
 			</section>
@@ -129,7 +129,7 @@
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A list of game modes.</p>
+						<p>Game modes to match lobbies against.</p>
 					</div>
 				</div>
 			</section>
@@ -140,14 +140,9 @@
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="../modules/findlobbyinput.html">FindLobbyInput</a>.<a href="../modules/findlobbyinput.html#origin">origin</a></p>
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:95</li>
+						<li>Defined in clients/client/src/models/models_0.ts:94</li>
 					</ul>
 				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>The origin header. Usually does not need to be manually set.</p>
-					</div>
-				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 				<a name="preventautocreatelobby" class="tsd-anchor"></a>
@@ -156,12 +151,13 @@
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="../modules/findlobbyinput.html">FindLobbyInput</a>.<a href="../modules/findlobbyinput.html#preventautocreatelobby">preventAutoCreateLobby</a></p>
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:85</li>
+						<li>Defined in clients/client/src/models/models_0.ts:87</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Prevents a new lobby from being created when finding a lobby.</p>
+						<p>Prevents a new lobby from being created when finding a lobby. If no
+						lobby is found, a <code>MATCHMAKER_LOBBY_NOT_FOUND</code> error will be thrown.</p>
 					</div>
 				</div>
 			</section>
@@ -172,12 +168,13 @@
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="../modules/findlobbyinput.html">FindLobbyInput</a>.<a href="../modules/findlobbyinput.html#regions">regions</a></p>
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:80</li>
+						<li>Defined in clients/client/src/models/models_0.ts:81</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A list of game regions.</p>
+						<p>Regions to match lobbies against. If not specified, the optimal region
+						will be determined and will attempt to find lobbies in that region.</p>
 					</div>
 				</div>
 			</section>

@@ -102,12 +102,12 @@
 				<div class="tsd-signature tsd-kind-icon">captcha<span class="tsd-signature-symbol">:</span> <a href="captchaconfig.html" class="tsd-signature-type">CaptchaConfig</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:90</li>
+						<li>Defined in clients/client/src/models/models_0.ts:92</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A union of various captcha configurations.</p>
+						<p>Methods to verify a captcha.</p>
 					</div>
 				</div>
 			</section>
@@ -122,7 +122,7 @@
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A list of game modes.</p>
+						<p>Game modes to match lobbies against.</p>
 					</div>
 				</div>
 			</section>
@@ -132,14 +132,9 @@
 				<div class="tsd-signature tsd-kind-icon">origin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:95</li>
+						<li>Defined in clients/client/src/models/models_0.ts:94</li>
 					</ul>
 				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>The origin header. Usually does not need to be manually set.</p>
-					</div>
-				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
 				<a name="preventautocreatelobby" class="tsd-anchor"></a>
@@ -147,12 +142,13 @@
 				<div class="tsd-signature tsd-kind-icon">prevent<wbr>Auto<wbr>Create<wbr>Lobby<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:85</li>
+						<li>Defined in clients/client/src/models/models_0.ts:87</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Prevents a new lobby from being created when finding a lobby.</p>
+						<p>Prevents a new lobby from being created when finding a lobby. If no
+						lobby is found, a <code>MATCHMAKER_LOBBY_NOT_FOUND</code> error will be thrown.</p>
 					</div>
 				</div>
 			</section>
@@ -162,12 +158,13 @@
 				<div class="tsd-signature tsd-kind-icon">regions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:80</li>
+						<li>Defined in clients/client/src/models/models_0.ts:81</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A list of game regions.</p>
+						<p>Regions to match lobbies against. If not specified, the optimal region
+						will be determined and will attempt to find lobbies in that region.</p>
 					</div>
 				</div>
 			</section>

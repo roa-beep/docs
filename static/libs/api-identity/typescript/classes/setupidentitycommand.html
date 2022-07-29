@@ -66,7 +66,24 @@
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Initiates an identity. Passing an existing identity token in the body refreshes it.</p>
+					<p>Gets or creates an identity.
+					Passing an existing identity token in the body refreshes the token.</p>
+					<a href="#temporary-accounts" id="temporary-accounts" style="color: inherit; text-decoration: none;">
+						<h1>Temporary Accounts</h1>
+					</a>
+					<p>Until the identity is linked with the Rivet Hub (see
+						<code>rivet.api.identity#PrepareGameLink</code>), this identity will be temporary but
+						still behave like all other identities.
+						This is intended to allow users to play the game without signing up while
+						still having the benefits of having an account. When they are ready to save
+						their account, they should be instructed to link their account (see
+					<code>rivet.api.identity#PrepareGameLink</code>).</p>
+					<a href="#storing-token" id="storing-token" style="color: inherit; text-decoration: none;">
+						<h1>Storing Token</h1>
+					</a>
+					<p><code>identity_token</code> should be stored in some form of persistent storage. The
+						token should be read from storage and passed to
+					<code>rivet.api.identity#SetupIdentity</code> every time the client starts.</p>
 				</div>
 				<dl class="tsd-comment-tags">
 					<dt>example</dt>
@@ -141,7 +158,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/commands/SetupIdentityCommand.ts:51</li>
+								<li>Defined in clients/client/src/commands/SetupIdentityCommand.ts:70</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -164,7 +181,7 @@
 				<aside class="tsd-sources">
 					<p>Overrides Command.input</p>
 					<ul>
-						<li>Defined in clients/client/src/commands/SetupIdentityCommand.ts:55</li>
+						<li>Defined in clients/client/src/commands/SetupIdentityCommand.ts:74</li>
 					</ul>
 				</aside>
 			</section>
@@ -173,7 +190,7 @@
 				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> middleware<wbr>Stack</h3>
 				<div class="tsd-signature tsd-kind-icon">middleware<wbr>Stack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IMiddlewareStack</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/setupidentitycommandinput.html" class="tsd-signature-type">SetupIdentityCommandInput</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/setupidentitycommandoutput.html" class="tsd-signature-type">SetupIdentityCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
-					<p>Inherited from <a href="gameidentitylinkcommand.html">GameIdentityLinkCommand</a>.<a href="gameidentitylinkcommand.html#middlewarestack">middlewareStack</a></p>
+					<p>Inherited from <a href="completeidentityavataruploadcommand.html">CompleteIdentityAvatarUploadCommand</a>.<a href="completeidentityavataruploadcommand.html#middlewarestack">middlewareStack</a></p>
 					<ul>
 						<li>Defined in node_modules/@aws-sdk/smithy-client/dist-types/command.d.ts:4</li>
 					</ul>

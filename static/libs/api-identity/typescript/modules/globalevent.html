@@ -61,7 +61,7 @@
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>A event for various uses.</p>
+					<p>An event relevant to the current identity.</p>
 				</div>
 			</div>
 		</section>
@@ -88,12 +88,12 @@
 				<div class="tsd-signature tsd-kind-icon">kind<span class="tsd-signature-symbol">:</span> <a href="globaleventkind.html" class="tsd-signature-type">GlobalEventKind</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:2008</li>
+						<li>Defined in clients/client/src/models/models_0.ts:2043</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A union representing a global event body.</p>
+						<p>Kind of event that occured.</p>
 					</div>
 				</div>
 			</section>
@@ -103,12 +103,33 @@
 				<div class="tsd-signature tsd-kind-icon">notification<span class="tsd-signature-symbol">:</span> <a href="globaleventnotification.html" class="tsd-signature-type">GlobalEventNotification</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:2013</li>
+						<li>Defined in clients/client/src/models/models_0.ts:2072</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A notification for a given global event.</p>
+						<p>Notifications represent information that should be presented to the user
+							immediately.
+						At the moment, only chat message events have associated notifications.</p>
+						<a href="#display" id="display" style="color: inherit; text-decoration: none;">
+							<h1>Display</h1>
+						</a>
+						<p>Notifications should be displayed in an unobtrusive manner throughout the
+							entire game. Notifications should disappear after a few seconds if not
+						interacted with.</p>
+						<a href="#interactions" id="interactions" style="color: inherit; text-decoration: none;">
+							<h1>Interactions</h1>
+						</a>
+						<p>If your platform supports it, notifications should be able to be clicked or
+							tapped in order to open the relevant context for the event.
+							For a simple implementation of notification interactions, open <code>url</code> in a
+							web browser to present the relevant context. For example, a chat message
+							notification will open the thread the chat message was sent in.
+							For advanced implementations that implement a custom chat UI, use
+							<code>rivet.api.identity.common#GlobalEvent$kind</code> to determine what action to
+							take when the notification is interacted with. For example, if the global
+							event kind is <code>rivet.api.identity.common#GlobalEventChatMessage</code>, then open
+						the chat UI for the given thread.</p>
 					</div>
 				</div>
 			</section>
@@ -118,12 +139,12 @@
 				<div class="tsd-signature tsd-kind-icon">ts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:2003</li>
+						<li>Defined in clients/client/src/models/models_0.ts:2038</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A number representing time since UNIX epoch (in milliseconds).</p>
+						<p>Time since UNIX epoch (in milliseconds).</p>
 					</div>
 				</div>
 			</section>

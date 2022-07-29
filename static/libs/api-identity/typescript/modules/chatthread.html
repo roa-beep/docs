@@ -52,13 +52,13 @@
 			<a href="chatthread.html#external" class="tsd-kind-icon">external</a>
 		</li>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
-			<a href="chatthread.html#id" class="tsd-kind-icon">id</a>
-		</li>
-		<li class=" tsd-kind-property tsd-parent-kind-namespace">
 			<a href="chatthread.html#lastreadts" class="tsd-kind-icon">last<wbr>Read<wbr>Ts</a>
 		</li>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
 			<a href="chatthread.html#tailmessage" class="tsd-kind-icon">tail<wbr>Message</a>
+		</li>
+		<li class=" tsd-kind-property tsd-parent-kind-namespace">
+			<a href="chatthread.html#threadid" class="tsd-kind-icon">thread<wbr>Id</a>
 		</li>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
 			<a href="chatthread.html#topic" class="tsd-kind-icon">topic</a>
@@ -86,9 +86,9 @@
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="chatthread.html#createts" class="tsd-kind-icon">create<wbr>Ts</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="chatthread.html#external" class="tsd-kind-icon">external</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="chatthread.html#id" class="tsd-kind-icon">id</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="chatthread.html#lastreadts" class="tsd-kind-icon">last<wbr>Read<wbr>Ts</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="chatthread.html#tailmessage" class="tsd-kind-icon">tail<wbr>Message</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="chatthread.html#threadid" class="tsd-kind-icon">thread<wbr>Id</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="chatthread.html#topic" class="tsd-kind-icon">topic</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="chatthread.html#unreadcount" class="tsd-kind-icon">unread<wbr>Count</a></li>
 						</ul>
@@ -104,12 +104,12 @@
 				<div class="tsd-signature tsd-kind-icon">create<wbr>Ts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1248</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1305</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A number representing time since UNIX epoch (in milliseconds).</p>
+						<p>Time since UNIX epoch (in milliseconds).</p>
 					</div>
 				</div>
 			</section>
@@ -119,7 +119,7 @@
 				<div class="tsd-signature tsd-kind-icon">external<span class="tsd-signature-symbol">:</span> <a href="chatthreadexternallinks.html" class="tsd-signature-type">ChatThreadExternalLinks</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1273</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1330</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -129,32 +129,17 @@
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-				<a name="id" class="tsd-anchor"></a>
-				<h3>id</h3>
-				<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1243</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>A universally unique identifier.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
 				<a name="lastreadts" class="tsd-anchor"></a>
 				<h3>last<wbr>Read<wbr>Ts</h3>
 				<div class="tsd-signature tsd-kind-icon">last<wbr>Read<wbr>Ts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1263</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1320</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A number representing time since UNIX epoch (in milliseconds).</p>
+						<p>Time since UNIX epoch (in milliseconds).</p>
 					</div>
 				</div>
 			</section>
@@ -164,7 +149,7 @@
 				<div class="tsd-signature tsd-kind-icon">tail<wbr>Message<span class="tsd-signature-symbol">:</span> <a href="chatmessage.html" class="tsd-signature-type">ChatMessage</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1258</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1315</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -174,17 +159,32 @@
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-				<a name="topic" class="tsd-anchor"></a>
-				<h3>topic</h3>
-				<div class="tsd-signature tsd-kind-icon">topic<span class="tsd-signature-symbol">:</span> <a href="chattopiccontext.html" class="tsd-signature-type">ChatTopicContext</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+				<a name="threadid" class="tsd-anchor"></a>
+				<h3>thread<wbr>Id</h3>
+				<div class="tsd-signature tsd-kind-icon">thread<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1253</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1300</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A union representing the topic of the given chat thread.</p>
+						<p>A universally unique identifier.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
+				<a name="topic" class="tsd-anchor"></a>
+				<h3>topic</h3>
+				<div class="tsd-signature tsd-kind-icon">topic<span class="tsd-signature-symbol">:</span> <a href="chattopic.html" class="tsd-signature-type">ChatTopic</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in clients/client/src/models/models_0.ts:1310</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Represents the topic of the given chat thread.</p>
 					</div>
 				</div>
 			</section>
@@ -194,7 +194,7 @@
 				<div class="tsd-signature tsd-kind-icon">unread<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1268</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1325</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">

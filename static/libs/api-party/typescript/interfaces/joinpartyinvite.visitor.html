@@ -52,6 +52,9 @@
 			<a href="joinpartyinvite.aliasmember.html" class="tsd-kind-icon">Alias<wbr>Member</a>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+			<a href="joinpartyinvite.partyidmember.html" class="tsd-kind-icon">Party<wbr>IdMember</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-namespace">
 			<a href="joinpartyinvite.tokenmember.html" class="tsd-kind-icon">Token<wbr>Member</a>
 		</li>
 		<li class="current tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
@@ -62,6 +65,9 @@
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="joinpartyinvite.visitor.html#alias" class="tsd-kind-icon">alias</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="joinpartyinvite.visitor.html#partyid" class="tsd-kind-icon">party<wbr>Id</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="joinpartyinvite.visitor.html#token" class="tsd-kind-icon">token</a>
@@ -100,6 +106,7 @@
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="joinpartyinvite.visitor.html#_" class="tsd-kind-icon">_</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="joinpartyinvite.visitor.html#alias" class="tsd-kind-icon">alias</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="joinpartyinvite.visitor.html#partyid" class="tsd-kind-icon">party<wbr>Id</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="joinpartyinvite.visitor.html#token" class="tsd-kind-icon">token</a></li>
 						</ul>
 					</section>
@@ -114,7 +121,7 @@
 				<div class="tsd-signature tsd-kind-icon">_<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1088</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1344</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -148,7 +155,38 @@
 				<div class="tsd-signature tsd-kind-icon">alias<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1087</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1343</li>
+					</ul>
+				</aside>
+				<div class="tsd-type-declaration">
+					<h4>Type declaration</h4>
+					<ul class="tsd-parameters">
+						<li class="tsd-parameter-signature">
+							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+							</ul>
+							<ul class="tsd-descriptions">
+								<li class="tsd-description">
+									<h4 class="tsd-parameters-title">Parameters</h4>
+									<ul class="tsd-parameters">
+										<li>
+											<h5>value: <span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
+									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="partyid" class="tsd-anchor"></a>
+				<h3>party<wbr>Id</h3>
+				<div class="tsd-signature tsd-kind-icon">party<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in clients/client/src/models/models_0.ts:1341</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -179,7 +217,7 @@
 				<div class="tsd-signature tsd-kind-icon">token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1086</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1342</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
