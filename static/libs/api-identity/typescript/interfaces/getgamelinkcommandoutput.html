@@ -48,10 +48,13 @@
 		<li class="current tsd-kind-interface">
 			<a href="getgamelinkcommandoutput.html" class="tsd-kind-icon">Get<wbr>Game<wbr>Link<wbr>Command<wbr>Output</a>
 			<ul>
-				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
 					<a href="getgamelinkcommandoutput.html#_metadata" class="tsd-kind-icon">$metadata</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
+					<a href="getgamelinkcommandoutput.html#game" class="tsd-kind-icon">game</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
 					<a href="getgamelinkcommandoutput.html#status" class="tsd-kind-icon">status</a>
 				</li>
 			</ul>
@@ -65,6 +68,12 @@
 			<ul class="tsd-hierarchy">
 				<li>
 					<a href="../modules/getgamelinkoutput.html" class="tsd-signature-type">GetGameLinkOutput</a>
+				</li>
+				<li>
+					<span class="tsd-signature-type">MetadataBearer</span>
+				</li>
+				<li>
+					<span class="tsd-signature-type">GetGameLinkOutput</span>
 				</li>
 				<li>
 					<span class="tsd-signature-type">MetadataBearer</span>
@@ -83,8 +92,9 @@
 					<section class="tsd-index-section tsd-is-inherited">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="getgamelinkcommandoutput.html#_metadata" class="tsd-kind-icon">$metadata</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="getgamelinkcommandoutput.html#status" class="tsd-kind-icon">status</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited"><a href="getgamelinkcommandoutput.html#_metadata" class="tsd-kind-icon">$metadata</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited"><a href="getgamelinkcommandoutput.html#game" class="tsd-kind-icon">game</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited"><a href="getgamelinkcommandoutput.html#status" class="tsd-kind-icon">status</a></li>
 						</ul>
 					</section>
 				</div>
@@ -92,12 +102,13 @@
 		</section>
 		<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 			<h2>Properties</h2>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
 				<a name="_metadata" class="tsd-anchor"></a>
 				<h3>$metadata</h3>
 				<div class="tsd-signature tsd-kind-icon">$metadata<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ResponseMetadata</span></div>
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="completeidentityavataruploadcommandoutput.html">CompleteIdentityAvatarUploadCommandOutput</a>.<a href="completeidentityavataruploadcommandoutput.html#_metadata">$metadata</a></p>
+					<p>Overrides <a href="completeidentityavataruploadcommandoutput.html">CompleteIdentityAvatarUploadCommandOutput</a>.<a href="completeidentityavataruploadcommandoutput.html#_metadata">$metadata</a></p>
 					<ul>
 						<li>Defined in node_modules/@aws-sdk/types/dist-types/response.d.ts:33</li>
 					</ul>
@@ -108,14 +119,32 @@
 					</div>
 				</div>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
+				<a name="game" class="tsd-anchor"></a>
+				<h3>game</h3>
+				<div class="tsd-signature tsd-kind-icon">game<span class="tsd-signature-symbol">:</span> <a href="../modules/gamehandle.html" class="tsd-signature-type">GameHandle</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+				<aside class="tsd-sources">
+					<p>Inherited from <a href="../modules/getgamelinkoutput.html">GetGameLinkOutput</a>.<a href="../modules/getgamelinkoutput.html#game">game</a></p>
+					<p>Overrides GetGameLinkOutput.game</p>
+					<ul>
+						<li>Defined in clients/client/src/models/models_0.ts:2227</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A game handle.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
 				<a name="status" class="tsd-anchor"></a>
 				<h3>status</h3>
 				<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <a href="../enums/gamelinkstatus.html" class="tsd-signature-type">GameLinkStatus</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="../modules/getgamelinkoutput.html">GetGameLinkOutput</a>.<a href="../modules/getgamelinkoutput.html#status">status</a></p>
+					<p>Overrides GetGameLinkOutput.status</p>
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:2309</li>
+						<li>Defined in clients/client/src/models/models_0.ts:2222</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">

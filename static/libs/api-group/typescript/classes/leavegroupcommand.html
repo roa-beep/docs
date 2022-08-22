@@ -54,7 +54,7 @@
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a href="leavegroupcommand.html#input" class="tsd-kind-icon">input</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a href="leavegroupcommand.html#middlewarestack" class="tsd-kind-icon">middleware<wbr>Stack</a>
 				</li>
 			</ul>
@@ -95,6 +95,9 @@
 			<ul class="tsd-hierarchy">
 				<li>
 					<span class="tsd-signature-type">Command</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/leavegroupcommandinput.html" class="tsd-signature-type">LeaveGroupCommandInput</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/leavegroupcommandoutput.html" class="tsd-signature-type">LeaveGroupCommandOutput</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/groupserviceclientresolvedconfig.html" class="tsd-signature-type">GroupServiceClientResolvedConfig</a><span class="tsd-signature-symbol">&gt;</span>
+				</li>
+				<li>
+					<span class="tsd-signature-type">Command</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">LeaveGroupCommandInput</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">LeaveGroupCommandOutput</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">GroupServiceClientResolvedConfig</span><span class="tsd-signature-symbol">&gt;</span>
 					<ul class="tsd-hierarchy">
 						<li>
 							<span class="target">LeaveGroupCommand</span>
@@ -107,6 +110,7 @@
 			<h3>Implements</h3>
 			<ul class="tsd-hierarchy">
 				<li><span class="tsd-signature-type">Command</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/leavegroupcommandinput.html" class="tsd-signature-type">LeaveGroupCommandInput</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/leavegroupcommandoutput.html" class="tsd-signature-type">LeaveGroupCommandOutput</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/groupserviceclientresolvedconfig.html" class="tsd-signature-type">GroupServiceClientResolvedConfig</a><span class="tsd-signature-symbol">&gt;</span></li>
+				<li><span class="tsd-signature-type">Command</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">LeaveGroupCommandInput</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">LeaveGroupCommandOutput</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">GroupServiceClientResolvedConfig</span><span class="tsd-signature-symbol">&gt;</span></li>
 			</ul>
 		</section>
 		<section class="tsd-panel-group tsd-index-group">
@@ -123,7 +127,7 @@
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="leavegroupcommand.html#input" class="tsd-kind-icon">input</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="leavegroupcommand.html#middlewarestack" class="tsd-kind-icon">middleware<wbr>Stack</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="leavegroupcommand.html#middlewarestack" class="tsd-kind-icon">middleware<wbr>Stack</a></li>
 						</ul>
 					</section>
 				</div>
@@ -136,6 +140,7 @@
 				<h3>constructor</h3>
 				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
 					<li class="tsd-signature tsd-kind-icon">new <wbr>Leave<wbr>Group<wbr>Command<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><a href="../interfaces/leavegroupcommandinput.html" class="tsd-signature-type">LeaveGroupCommandInput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="leavegroupcommand.html" class="tsd-signature-type">LeaveGroupCommand</a></li>
+					<li class="tsd-signature tsd-kind-icon">new <wbr>Leave<wbr>Group<wbr>Command<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">LeaveGroupCommandInput</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="leavegroupcommand.html" class="tsd-signature-type">LeaveGroupCommand</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -152,6 +157,20 @@
 						</ul>
 						<h4 class="tsd-returns-title">Returns <a href="leavegroupcommand.html" class="tsd-signature-type">LeaveGroupCommand</a></h4>
 					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/commands/LeaveGroupCommand.d.ts:27</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-type">LeaveGroupCommandInput</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="leavegroupcommand.html" class="tsd-signature-type">LeaveGroupCommand</a></h4>
+					</li>
 				</ul>
 			</section>
 		</section>
@@ -160,20 +179,22 @@
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 				<a name="input" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> input</h3>
-				<div class="tsd-signature tsd-kind-icon">input<span class="tsd-signature-symbol">:</span> <a href="../interfaces/leavegroupcommandinput.html" class="tsd-signature-type">LeaveGroupCommandInput</a></div>
+				<div class="tsd-signature tsd-kind-icon">input<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">LeaveGroupCommandInput</span></div>
 				<aside class="tsd-sources">
 					<p>Overrides Command.input</p>
 					<ul>
 						<li>Defined in clients/client/src/commands/LeaveGroupCommand.ts:55</li>
+						<li>Defined in dist-types/commands/LeaveGroupCommand.d.ts:27</li>
 					</ul>
 				</aside>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 				<a name="middlewarestack" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> middleware<wbr>Stack</h3>
 				<div class="tsd-signature tsd-kind-icon">middleware<wbr>Stack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IMiddlewareStack</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/leavegroupcommandinput.html" class="tsd-signature-type">LeaveGroupCommandInput</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/leavegroupcommandoutput.html" class="tsd-signature-type">LeaveGroupCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="consumegroupinvitecommand.html">ConsumeGroupInviteCommand</a>.<a href="consumegroupinvitecommand.html#middlewarestack">middlewareStack</a></p>
+					<p>Overrides <a href="consumegroupinvitecommand.html">ConsumeGroupInviteCommand</a>.<a href="consumegroupinvitecommand.html#middlewarestack">middlewareStack</a></p>
 					<ul>
 						<li>Defined in node_modules/@aws-sdk/smithy-client/dist-types/command.d.ts:4</li>
 					</ul>

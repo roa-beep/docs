@@ -54,7 +54,7 @@
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a href="kvservice.html#config" class="tsd-kind-icon">config</a>
 				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a href="kvservice.html#middlewarestack" class="tsd-kind-icon">middleware<wbr>Stack</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -78,7 +78,7 @@
 				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="kvservice.html#putbatch" class="tsd-kind-icon">put<wbr>Batch</a>
 				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited">
 					<a href="kvservice.html#send" class="tsd-kind-icon">send</a>
 				</li>
 			</ul>
@@ -92,6 +92,9 @@
 			<ul class="tsd-hierarchy">
 				<li>
 					<a href="kvserviceclient.html" class="tsd-signature-type">KvServiceClient</a>
+				</li>
+				<li>
+					<span class="tsd-signature-type">KvServiceClient</span>
 					<ul class="tsd-hierarchy">
 						<li>
 							<span class="target">KvService</span>
@@ -104,6 +107,7 @@
 			<h3>Implements</h3>
 			<ul class="tsd-hierarchy">
 				<li><span class="tsd-signature-type">Client</span><span class="tsd-signature-symbol">&lt;</span><a href="../index.html#serviceinputtypes" class="tsd-signature-type">ServiceInputTypes</a><span class="tsd-signature-symbol">, </span><a href="../index.html#serviceoutputtypes" class="tsd-signature-type">ServiceOutputTypes</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/kvserviceclientresolvedconfig.html" class="tsd-signature-type">KvServiceClientResolvedConfig</a><span class="tsd-signature-symbol">&gt;</span></li>
+				<li><span class="tsd-signature-type">Client</span><span class="tsd-signature-symbol">&lt;</span><a href="../index.html#serviceinputtypes" class="tsd-signature-type">ServiceInputTypes</a><span class="tsd-signature-symbol">, </span><a href="../index.html#serviceoutputtypes" class="tsd-signature-type">ServiceOutputTypes</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">KvServiceClientResolvedConfig</span><span class="tsd-signature-symbol">&gt;</span></li>
 			</ul>
 		</section>
 		<section class="tsd-panel-group tsd-index-group">
@@ -120,7 +124,7 @@
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="kvservice.html#config" class="tsd-kind-icon">config</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="kvservice.html#middlewarestack" class="tsd-kind-icon">middleware<wbr>Stack</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="kvservice.html#middlewarestack" class="tsd-kind-icon">middleware<wbr>Stack</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
@@ -133,7 +137,7 @@
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="kvservice.html#getbatch" class="tsd-kind-icon">get<wbr>Batch</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="kvservice.html#put" class="tsd-kind-icon">put</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="kvservice.html#putbatch" class="tsd-kind-icon">put<wbr>Batch</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="kvservice.html#send" class="tsd-kind-icon">send</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited"><a href="kvservice.html#send" class="tsd-kind-icon">send</a></li>
 						</ul>
 					</section>
 				</div>
@@ -186,12 +190,13 @@
 					</div>
 				</div>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 				<a name="middlewarestack" class="tsd-anchor"></a>
 				<h3>middleware<wbr>Stack</h3>
 				<div class="tsd-signature tsd-kind-icon">middleware<wbr>Stack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MiddlewareStack</span><span class="tsd-signature-symbol">&lt;</span><a href="../index.html#serviceinputtypes" class="tsd-signature-type">ServiceInputTypes</a><span class="tsd-signature-symbol">, </span><a href="../index.html#serviceoutputtypes" class="tsd-signature-type">ServiceOutputTypes</a><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="kvserviceclient.html">KvServiceClient</a>.<a href="kvserviceclient.html#middlewarestack">middlewareStack</a></p>
+					<p>Overrides <a href="kvserviceclient.html">KvServiceClient</a>.<a href="kvserviceclient.html#middlewarestack">middlewareStack</a></p>
 					<ul>
 						<li>Defined in node_modules/@aws-sdk/smithy-client/dist-types/client.d.ts:13</li>
 					</ul>
@@ -207,6 +212,9 @@
 					<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/deletecommandinput.html" class="tsd-signature-type">DeleteCommandInput</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/deletecommandoutput.html" class="tsd-signature-type">DeleteCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></li>
 					<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/deletecommandinput.html" class="tsd-signature-type">DeleteCommandInput</a>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/deletecommandoutput.html" class="tsd-signature-type">DeleteCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/deletecommandinput.html" class="tsd-signature-type">DeleteCommandInput</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/deletecommandoutput.html" class="tsd-signature-type">DeleteCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DeleteCommandInput</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DeleteCommandOutput</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DeleteCommandInput</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/deletecommandoutput.html" class="tsd-signature-type">DeleteCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DeleteCommandInput</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/deletecommandoutput.html" class="tsd-signature-type">DeleteCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -320,6 +328,117 @@
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:13</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Deletes a key-value entry by key.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">DeleteCommandInput</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DeleteCommandOutput</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:14</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Deletes a key-value entry by key.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">DeleteCommandInput</span></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/deletecommandoutput.html" class="tsd-signature-type">DeleteCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/deletecommandoutput.html" class="tsd-signature-type">DeleteCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/deletecommandoutput.html" class="tsd-signature-type">DeleteCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:15</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Deletes a key-value entry by key.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">DeleteCommandInput</span></h5>
+							</li>
+							<li>
+								<h5>options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/deletecommandoutput.html" class="tsd-signature-type">DeleteCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/deletecommandoutput.html" class="tsd-signature-type">DeleteCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/deletecommandoutput.html" class="tsd-signature-type">DeleteCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
@@ -329,6 +448,9 @@
 					<li class="tsd-signature tsd-kind-icon">delete<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/deletebatchcommandinput.html" class="tsd-signature-type">DeleteBatchCommandInput</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/deletebatchcommandoutput.html" class="tsd-signature-type">DeleteBatchCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></li>
 					<li class="tsd-signature tsd-kind-icon">delete<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/deletebatchcommandinput.html" class="tsd-signature-type">DeleteBatchCommandInput</a>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/deletebatchcommandoutput.html" class="tsd-signature-type">DeleteBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					<li class="tsd-signature tsd-kind-icon">delete<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/deletebatchcommandinput.html" class="tsd-signature-type">DeleteBatchCommandInput</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/deletebatchcommandoutput.html" class="tsd-signature-type">DeleteBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">delete<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DeleteBatchCommandInput</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DeleteBatchCommandOutput</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">delete<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DeleteBatchCommandInput</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/deletebatchcommandoutput.html" class="tsd-signature-type">DeleteBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">delete<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DeleteBatchCommandInput</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/deletebatchcommandoutput.html" class="tsd-signature-type">DeleteBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -442,6 +564,117 @@
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:19</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Deletes multiple key-value entries by key(s).</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">DeleteBatchCommandInput</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DeleteBatchCommandOutput</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:20</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Deletes multiple key-value entries by key(s).</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">DeleteBatchCommandInput</span></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/deletebatchcommandoutput.html" class="tsd-signature-type">DeleteBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/deletebatchcommandoutput.html" class="tsd-signature-type">DeleteBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/deletebatchcommandoutput.html" class="tsd-signature-type">DeleteBatchCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:21</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Deletes multiple key-value entries by key(s).</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">DeleteBatchCommandInput</span></h5>
+							</li>
+							<li>
+								<h5>options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/deletebatchcommandoutput.html" class="tsd-signature-type">DeleteBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/deletebatchcommandoutput.html" class="tsd-signature-type">DeleteBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/deletebatchcommandoutput.html" class="tsd-signature-type">DeleteBatchCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
@@ -477,6 +710,9 @@
 					<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/getcommandinput.html" class="tsd-signature-type">GetCommandInput</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/getcommandoutput.html" class="tsd-signature-type">GetCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></li>
 					<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/getcommandinput.html" class="tsd-signature-type">GetCommandInput</a>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getcommandoutput.html" class="tsd-signature-type">GetCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/getcommandinput.html" class="tsd-signature-type">GetCommandInput</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getcommandoutput.html" class="tsd-signature-type">GetCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GetCommandInput</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GetCommandOutput</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GetCommandInput</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getcommandoutput.html" class="tsd-signature-type">GetCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GetCommandInput</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getcommandoutput.html" class="tsd-signature-type">GetCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -590,6 +826,117 @@
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:25</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns a specific key-value entry by key.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">GetCommandInput</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GetCommandOutput</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:26</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns a specific key-value entry by key.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">GetCommandInput</span></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getcommandoutput.html" class="tsd-signature-type">GetCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getcommandoutput.html" class="tsd-signature-type">GetCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/getcommandoutput.html" class="tsd-signature-type">GetCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:27</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns a specific key-value entry by key.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">GetCommandInput</span></h5>
+							</li>
+							<li>
+								<h5>options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getcommandoutput.html" class="tsd-signature-type">GetCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getcommandoutput.html" class="tsd-signature-type">GetCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/getcommandoutput.html" class="tsd-signature-type">GetCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
@@ -599,6 +946,9 @@
 					<li class="tsd-signature tsd-kind-icon">get<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/getbatchcommandinput.html" class="tsd-signature-type">GetBatchCommandInput</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/getbatchcommandoutput.html" class="tsd-signature-type">GetBatchCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></li>
 					<li class="tsd-signature tsd-kind-icon">get<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/getbatchcommandinput.html" class="tsd-signature-type">GetBatchCommandInput</a>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getbatchcommandoutput.html" class="tsd-signature-type">GetBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					<li class="tsd-signature tsd-kind-icon">get<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/getbatchcommandinput.html" class="tsd-signature-type">GetBatchCommandInput</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getbatchcommandoutput.html" class="tsd-signature-type">GetBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GetBatchCommandInput</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GetBatchCommandOutput</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GetBatchCommandInput</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getbatchcommandoutput.html" class="tsd-signature-type">GetBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GetBatchCommandInput</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getbatchcommandoutput.html" class="tsd-signature-type">GetBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -712,6 +1062,117 @@
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:31</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Gets multiple key-value entries by key(s).</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">GetBatchCommandInput</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">GetBatchCommandOutput</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:32</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Gets multiple key-value entries by key(s).</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">GetBatchCommandInput</span></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getbatchcommandoutput.html" class="tsd-signature-type">GetBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getbatchcommandoutput.html" class="tsd-signature-type">GetBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/getbatchcommandoutput.html" class="tsd-signature-type">GetBatchCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:33</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Gets multiple key-value entries by key(s).</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">GetBatchCommandInput</span></h5>
+							</li>
+							<li>
+								<h5>options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getbatchcommandoutput.html" class="tsd-signature-type">GetBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getbatchcommandoutput.html" class="tsd-signature-type">GetBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/getbatchcommandoutput.html" class="tsd-signature-type">GetBatchCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
@@ -721,6 +1182,9 @@
 					<li class="tsd-signature tsd-kind-icon">put<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/putcommandinput.html" class="tsd-signature-type">PutCommandInput</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/putcommandoutput.html" class="tsd-signature-type">PutCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></li>
 					<li class="tsd-signature tsd-kind-icon">put<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/putcommandinput.html" class="tsd-signature-type">PutCommandInput</a>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/putcommandoutput.html" class="tsd-signature-type">PutCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					<li class="tsd-signature tsd-kind-icon">put<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/putcommandinput.html" class="tsd-signature-type">PutCommandInput</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/putcommandoutput.html" class="tsd-signature-type">PutCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">put<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PutCommandInput</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PutCommandOutput</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">put<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PutCommandInput</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/putcommandoutput.html" class="tsd-signature-type">PutCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">put<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PutCommandInput</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/putcommandoutput.html" class="tsd-signature-type">PutCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -834,6 +1298,117 @@
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:37</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Puts (sets or overwrites) a key-value entry by key.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">PutCommandInput</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PutCommandOutput</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:38</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Puts (sets or overwrites) a key-value entry by key.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">PutCommandInput</span></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/putcommandoutput.html" class="tsd-signature-type">PutCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/putcommandoutput.html" class="tsd-signature-type">PutCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/putcommandoutput.html" class="tsd-signature-type">PutCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:39</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Puts (sets or overwrites) a key-value entry by key.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">PutCommandInput</span></h5>
+							</li>
+							<li>
+								<h5>options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/putcommandoutput.html" class="tsd-signature-type">PutCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/putcommandoutput.html" class="tsd-signature-type">PutCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/putcommandoutput.html" class="tsd-signature-type">PutCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
@@ -843,6 +1418,9 @@
 					<li class="tsd-signature tsd-kind-icon">put<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/putbatchcommandinput.html" class="tsd-signature-type">PutBatchCommandInput</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/putbatchcommandoutput.html" class="tsd-signature-type">PutBatchCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></li>
 					<li class="tsd-signature tsd-kind-icon">put<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/putbatchcommandinput.html" class="tsd-signature-type">PutBatchCommandInput</a>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/putbatchcommandoutput.html" class="tsd-signature-type">PutBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					<li class="tsd-signature tsd-kind-icon">put<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/putbatchcommandinput.html" class="tsd-signature-type">PutBatchCommandInput</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/putbatchcommandoutput.html" class="tsd-signature-type">PutBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">put<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PutBatchCommandInput</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PutBatchCommandOutput</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">put<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PutBatchCommandInput</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/putbatchcommandoutput.html" class="tsd-signature-type">PutBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">put<wbr>Batch<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PutBatchCommandInput</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/putbatchcommandoutput.html" class="tsd-signature-type">PutBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -956,12 +1534,123 @@
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:43</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Puts (sets or overwrites) multiple key-value entries by key(s).</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">PutBatchCommandInput</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PutBatchCommandOutput</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:44</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Puts (sets or overwrites) multiple key-value entries by key(s).</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">PutBatchCommandInput</span></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/putbatchcommandoutput.html" class="tsd-signature-type">PutBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/putbatchcommandoutput.html" class="tsd-signature-type">PutBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/putbatchcommandoutput.html" class="tsd-signature-type">PutBatchCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in dist-types/KvService.d.ts:45</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Puts (sets or overwrites) multiple key-value entries by key(s).</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <span class="tsd-signature-type">PutBatchCommandInput</span></h5>
+							</li>
+							<li>
+								<h5>options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/putbatchcommandoutput.html" class="tsd-signature-type">PutBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/putbatchcommandoutput.html" class="tsd-signature-type">PutBatchCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/putbatchcommandoutput.html" class="tsd-signature-type">PutBatchCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited">
 				<a name="send" class="tsd-anchor"></a>
 				<h3>send</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite tsd-is-inherited">
 					<li class="tsd-signature tsd-kind-icon">send&lt;InputType, OutputType&gt;<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Command</span><span class="tsd-signature-symbol">&lt;</span><a href="../index.html#serviceinputtypes" class="tsd-signature-type">ServiceInputTypes</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">InputType</span><span class="tsd-signature-symbol">, </span><a href="../index.html#serviceoutputtypes" class="tsd-signature-type">ServiceOutputTypes</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">OutputType</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">SmithyResolvedConfiguration</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, options<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">HandlerOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OutputType</span><span class="tsd-signature-symbol">&gt;</span></li>
 					<li class="tsd-signature tsd-kind-icon">send&lt;InputType, OutputType&gt;<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Command</span><span class="tsd-signature-symbol">&lt;</span><a href="../index.html#serviceinputtypes" class="tsd-signature-type">ServiceInputTypes</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">InputType</span><span class="tsd-signature-symbol">, </span><a href="../index.html#serviceoutputtypes" class="tsd-signature-type">ServiceOutputTypes</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">OutputType</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">SmithyResolvedConfiguration</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">OutputType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					<li class="tsd-signature tsd-kind-icon">send&lt;InputType, OutputType&gt;<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Command</span><span class="tsd-signature-symbol">&lt;</span><a href="../index.html#serviceinputtypes" class="tsd-signature-type">ServiceInputTypes</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">InputType</span><span class="tsd-signature-symbol">, </span><a href="../index.html#serviceoutputtypes" class="tsd-signature-type">ServiceOutputTypes</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">OutputType</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">SmithyResolvedConfiguration</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">OutputType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
@@ -970,6 +1659,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="kvserviceclient.html">KvServiceClient</a>.<a href="kvserviceclient.html#send">send</a></p>
+							<p>Overrides <a href="kvserviceclient.html">KvServiceClient</a>.<a href="kvserviceclient.html#send">send</a></p>
 							<ul>
 								<li>Defined in node_modules/@aws-sdk/smithy-client/dist-types/client.d.ts:16</li>
 							</ul>
@@ -997,6 +1687,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="kvserviceclient.html">KvServiceClient</a>.<a href="kvserviceclient.html#send">send</a></p>
+							<p>Overrides <a href="kvserviceclient.html">KvServiceClient</a>.<a href="kvserviceclient.html#send">send</a></p>
 							<ul>
 								<li>Defined in node_modules/@aws-sdk/smithy-client/dist-types/client.d.ts:17</li>
 							</ul>
@@ -1045,6 +1736,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<p>Inherited from <a href="kvserviceclient.html">KvServiceClient</a>.<a href="kvserviceclient.html#send">send</a></p>
+							<p>Overrides <a href="kvserviceclient.html">KvServiceClient</a>.<a href="kvserviceclient.html#send">send</a></p>
 							<ul>
 								<li>Defined in node_modules/@aws-sdk/smithy-client/dist-types/client.d.ts:18</li>
 							</ul>

@@ -49,9 +49,6 @@
 			<a href="identitypresence.html#gameactivity" class="tsd-kind-icon">game<wbr>Activity</a>
 		</li>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
-			<a href="identitypresence.html#party" class="tsd-kind-icon">party</a>
-		</li>
-		<li class=" tsd-kind-property tsd-parent-kind-namespace">
 			<a href="identitypresence.html#status" class="tsd-kind-icon">status</a>
 		</li>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
@@ -76,7 +73,6 @@
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="identitypresence.html#gameactivity" class="tsd-kind-icon">game<wbr>Activity</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="identitypresence.html#party" class="tsd-kind-icon">party</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="identitypresence.html#status" class="tsd-kind-icon">status</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="identitypresence.html#updatets" class="tsd-kind-icon">update<wbr>Ts</a></li>
 						</ul>
@@ -92,27 +88,12 @@
 				<div class="tsd-signature tsd-kind-icon">game<wbr>Activity<span class="tsd-signature-symbol">:</span> <a href="identitygameactivity.html" class="tsd-signature-type">IdentityGameActivity</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:574</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>The game an identity is currently participating in.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-				<a name="party" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> party</h3>
-				<div class="tsd-signature tsd-kind-icon">party<span class="tsd-signature-symbol">:</span> <a href="partyhandle.html" class="tsd-signature-type">PartyHandle</a></div>
-				<aside class="tsd-sources">
-					<ul>
 						<li>Defined in clients/client/src/models/models_0.ts:569</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A party handle.</p>
+						<p>The game an identity is currently participating in.</p>
 					</div>
 				</div>
 			</section>
@@ -135,7 +116,7 @@
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
 				<a name="updatets" class="tsd-anchor"></a>
 				<h3>update<wbr>Ts</h3>
-				<div class="tsd-signature tsd-kind-icon">update<wbr>Ts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+				<div class="tsd-signature tsd-kind-icon">update<wbr>Ts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in clients/client/src/models/models_0.ts:558</li>
@@ -143,7 +124,7 @@
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Time since UNIX epoch (in milliseconds).</p>
+						<p>RFC3339 timestamp.</p>
 					</div>
 				</div>
 			</section>
