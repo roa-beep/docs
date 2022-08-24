@@ -6,6 +6,6 @@ sidebar_position: 2.2
 
 ## Lifecycle
 
-TODO: Diagram
+> TODO: Diagram
 
 ## Example endpoints
