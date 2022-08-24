@@ -1,11 +1,11 @@
-.tutorials {
+.guides {
 	display: flex;
 	align-items: center;
 	padding: 2rem 0;
 	width: 100%;
 }
 
-.tutorialSnapshot {
+.guidesSnapshot {
 	height: 200px;
 	width: 200px;
 }
