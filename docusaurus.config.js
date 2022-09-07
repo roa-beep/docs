@@ -36,7 +36,12 @@ const config = {
 					editUrl: 'https://github.com/rivet-gg/docs/tree/main/',
 					docLayoutComponent: '@theme/DocPage',
 					docItemComponent: '@theme/ApiItem',
-					remarkPlugins: [mdxMermaid],
+					remarkPlugins: [
+						// See https://sjwall.github.io/mdx-mermaid/docs/intro/
+						[mdxMermaid, {
+							theme: { light: 'neutral', dark: 'dark' }
+						}]
+					],
 				},
 				theme: {
 					customCss: require.resolve('./src/css/custom.css')
