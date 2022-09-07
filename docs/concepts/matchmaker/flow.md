@@ -1,6 +1,6 @@
 # Matchmaker Flow
 
-## Player connection
+## Player connection & lobby creation
 
 ```mermaid
 sequenceDiagram
@@ -11,7 +11,16 @@ participant R as Rivet
 
 C->>R: POST matchmaker.api.rivet.gg/v1/lobbies/find
 activate R
-note right of R: Boots new lobby if cannot find existing lobby
+note right of R: Boots new lobby if cannot find existing lobby for game mode + region
+
+opt New lobby created
+	note over L: Run lobby setup (e.g. load maps)
+	L->>R: POST matchmaker.api.rivet.gg/v1/lobbies/ready
+	activate R
+	R-->>L: 200 OK
+	deactivate R
+end
+
 note right of R: Creates new player token, reserves spot in lobby
 note right of R: Player token will expire if doesn't connect within 2 minutes
 R-->>C: 200 OK: Lobby connection information + player token
@@ -54,6 +63,8 @@ L->>R: POST matchmaker.api.rivet.gg/v1/players/disconnected
 activate R
 R-->>L: 200 OK
 deactivate R
+
+note right of R: Lobby will shut down (i.e. receive SIGTERM) if no players left in lobby
 
 deactivate L
 ```
