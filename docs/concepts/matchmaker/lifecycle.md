@@ -1,4 +1,4 @@
-# Matchmaker Flow
+# Lifecycle
 
 ## Player connection & lobby creation
 
