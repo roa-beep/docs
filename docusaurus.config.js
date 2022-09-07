@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const mdxMermaid = require('mdx-mermaid');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -34,7 +35,8 @@ const config = {
 					sidebarPath: require.resolve('./sidebars.js'),
 					editUrl: 'https://github.com/rivet-gg/docs/tree/main/',
 					docLayoutComponent: '@theme/DocPage',
-					docItemComponent: '@theme/ApiItem'
+					docItemComponent: '@theme/ApiItem',
+					remarkPlugins: [mdxMermaid],
 				},
 				theme: {
 					customCss: require.resolve('./src/css/custom.css')
