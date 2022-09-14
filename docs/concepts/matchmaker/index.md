@@ -1,12 +1,12 @@
 # Matchmaker
 
-TODO: Link to test game
+> TODO: Link to test game
 
-TODO: Link to test game source code
+> TODO: Link to test game source code
 
 ## Lobby lifecycle
 
-TODO: Diagram
+> TODO: Diagram
 
 ### Client
 
@@ -50,4 +50,4 @@ await rivetServer.playerDisconnected({ playerToken });
 
 ## Player lifecycle
 
-TODO: Diagram
+> TODO: Diagram

@@ -2,16 +2,16 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
-type TutorialItem = {
+type GuideItem = {
 	title: string;
 	snapshotSrc: string;
 	description: JSX.Element;
 };
 
-const TUTORIAL_LIST: TutorialItem[] = [
+const GUIDE_LIST: GuideItem[] = [
 	{
 		title: 'Todo',
-		snapshotSrc: require('@site/static/img/tutorial-snapshots/todo.jpg').default,
+		snapshotSrc: require('@site/static/img/guide-snapshots/todo.jpg').default,
 		description: (
 			<>
 				TODO
@@ -20,7 +20,7 @@ const TUTORIAL_LIST: TutorialItem[] = [
 	},
 	{
 		title: 'Todo',
-		snapshotSrc: require('@site/static/img/tutorial-snapshots/todo.jpg').default,
+		snapshotSrc: require('@site/static/img/guide-snapshots/todo.jpg').default,
 		description: (
 			<>
 				TODO
@@ -29,7 +29,7 @@ const TUTORIAL_LIST: TutorialItem[] = [
 	},
 	{
 		title: 'Todo',
-		snapshotSrc: require('@site/static/img/tutorial-snapshots/todo.jpg').default,
+		snapshotSrc: require('@site/static/img/guide-snapshots/todo.jpg').default,
 		description: (
 			<>
 				TODO
@@ -38,7 +38,7 @@ const TUTORIAL_LIST: TutorialItem[] = [
 	},
 	{
 		title: 'Todo',
-		snapshotSrc: require('@site/static/img/tutorial-snapshots/todo.jpg').default,
+		snapshotSrc: require('@site/static/img/guide-snapshots/todo.jpg').default,
 		description: (
 			<>
 				TODO
@@ -47,11 +47,11 @@ const TUTORIAL_LIST: TutorialItem[] = [
 	},
 ];
 
-function Tutorial({ title, snapshotSrc, description }: TutorialItem) {
+function Guide({ title, snapshotSrc, description }: GuideItem) {
 	return (
 		<div className={clsx('col col--4')}>
 			<div className='text--center'>
-				<img src={snapshotSrc} alt='Tutorial Snapshot' className={styles.tutorialSnapshot} role='img' />
+				<img src={snapshotSrc} alt='Guide Snapshot' className={styles.guideSnapshot} role='img' />
 			</div>
 			<div className='text--center padding-horiz--md'>
 				<h3>{title}</h3>
@@ -63,11 +63,11 @@ function Tutorial({ title, snapshotSrc, description }: TutorialItem) {
 
 export default function HomepageOverview(): JSX.Element {
 	// return (
-	// 	<section className={styles.tutorial}>
+	// 	<section className={styles.guide}>
 	// 		<div className='container'>
 	// 			<div className='row'>
-	// 				{TUTORIAL_LIST.map((props, idx) => (
-	// 					<Tutorial key={idx} {...props} />
+	// 				{GUIDE_LIST.map((props, idx) => (
+	// 					<Guide key={idx} {...props} />
 	// 				))}
 	// 			</div>
 	// 		</div>
