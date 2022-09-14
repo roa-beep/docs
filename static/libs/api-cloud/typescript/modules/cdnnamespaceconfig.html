@@ -46,6 +46,12 @@
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
+			<a href="cdnnamespaceconfig.html#authtype" class="tsd-kind-icon">auth<wbr>Type</a>
+		</li>
+		<li class=" tsd-kind-property tsd-parent-kind-namespace">
+			<a href="cdnnamespaceconfig.html#authuserlist" class="tsd-kind-icon">auth<wbr>User<wbr>List</a>
+		</li>
+		<li class=" tsd-kind-property tsd-parent-kind-namespace">
 			<a href="cdnnamespaceconfig.html#domains" class="tsd-kind-icon">domains</a>
 		</li>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
@@ -69,6 +75,8 @@
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="cdnnamespaceconfig.html#authtype" class="tsd-kind-icon">auth<wbr>Type</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="cdnnamespaceconfig.html#authuserlist" class="tsd-kind-icon">auth<wbr>User<wbr>List</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="cdnnamespaceconfig.html#domains" class="tsd-kind-icon">domains</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="cdnnamespaceconfig.html#enabledomainpublicauth" class="tsd-kind-icon">enable<wbr>Domain<wbr>Public<wbr>Auth</a></li>
 						</ul>
@@ -79,12 +87,42 @@
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
+				<a name="authtype" class="tsd-anchor"></a>
+				<h3>auth<wbr>Type</h3>
+				<div class="tsd-signature tsd-kind-icon">auth<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/cdnauthtype.html" class="tsd-signature-type">CdnAuthType</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in clients/client/src/models/models_0.ts:1515</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A value denoting what type of authentication to use for a game namespace&#39;s CDN.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
+				<a name="authuserlist" class="tsd-anchor"></a>
+				<h3>auth<wbr>User<wbr>List</h3>
+				<div class="tsd-signature tsd-kind-icon">auth<wbr>User<wbr>List<span class="tsd-signature-symbol">:</span> <a href="cdnnamespaceauthuser.html" class="tsd-signature-type">CdnNamespaceAuthUser</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in clients/client/src/models/models_0.ts:1520</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A list of CDN authenticated users for a given namespace.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
 				<a name="domains" class="tsd-anchor"></a>
 				<h3>domains</h3>
 				<div class="tsd-signature tsd-kind-icon">domains<span class="tsd-signature-symbol">:</span> <a href="cdnnamespacedomain.html" class="tsd-signature-type">CdnNamespaceDomain</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1456</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1510</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -99,7 +137,7 @@
 				<div class="tsd-signature tsd-kind-icon">enable<wbr>Domain<wbr>Public<wbr>Auth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1451</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1505</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">

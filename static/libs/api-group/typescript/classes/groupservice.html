@@ -82,13 +82,13 @@
 					<a href="groupservice.html#getgroupsummary" class="tsd-kind-icon">get<wbr>Group<wbr>Summary</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="groupservice.html#getsuggestedgroups" class="tsd-kind-icon">get<wbr>Suggested<wbr>Groups</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="groupservice.html#joingroup" class="tsd-kind-icon">join<wbr>Group</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="groupservice.html#leavegroup" class="tsd-kind-icon">leave<wbr>Group</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="groupservice.html#listsuggestedgroups" class="tsd-kind-icon">list<wbr>Suggested<wbr>Groups</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="groupservice.html#preparegroupavatarupload" class="tsd-kind-icon">prepare<wbr>Group<wbr>Avatar<wbr>Upload</a>
@@ -164,9 +164,9 @@
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="groupservice.html#destroy" class="tsd-kind-icon">destroy</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="groupservice.html#getgroupprofile" class="tsd-kind-icon">get<wbr>Group<wbr>Profile</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="groupservice.html#getgroupsummary" class="tsd-kind-icon">get<wbr>Group<wbr>Summary</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="groupservice.html#getsuggestedgroups" class="tsd-kind-icon">get<wbr>Suggested<wbr>Groups</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="groupservice.html#joingroup" class="tsd-kind-icon">join<wbr>Group</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="groupservice.html#leavegroup" class="tsd-kind-icon">leave<wbr>Group</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="groupservice.html#listsuggestedgroups" class="tsd-kind-icon">list<wbr>Suggested<wbr>Groups</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="groupservice.html#preparegroupavatarupload" class="tsd-kind-icon">prepare<wbr>Group<wbr>Avatar<wbr>Upload</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="groupservice.html#resolvegroupjoinrequest" class="tsd-kind-icon">resolve<wbr>Group<wbr>Join<wbr>Request</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="groupservice.html#searchgroups" class="tsd-kind-icon">search<wbr>Groups</a></li>
@@ -1115,128 +1115,6 @@
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="getsuggestedgroups" class="tsd-anchor"></a>
-				<h3>get<wbr>Suggested<wbr>Groups</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Suggested<wbr>Groups<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/getsuggestedgroupscommandinput.html" class="tsd-signature-type">GetSuggestedGroupsCommandInput</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/getsuggestedgroupscommandoutput.html" class="tsd-signature-type">GetSuggestedGroupsCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></li>
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Suggested<wbr>Groups<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/getsuggestedgroupscommandinput.html" class="tsd-signature-type">GetSuggestedGroupsCommandInput</a>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getsuggestedgroupscommandoutput.html" class="tsd-signature-type">GetSuggestedGroupsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Suggested<wbr>Groups<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/getsuggestedgroupscommandinput.html" class="tsd-signature-type">GetSuggestedGroupsCommandInput</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getsuggestedgroupscommandoutput.html" class="tsd-signature-type">GetSuggestedGroupsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in clients/client/src/GroupService.ts:321</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Returns a list of suggested groups.</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>args: <a href="../interfaces/getsuggestedgroupscommandinput.html" class="tsd-signature-type">GetSuggestedGroupsCommandInput</a></h5>
-							</li>
-							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/getsuggestedgroupscommandoutput.html" class="tsd-signature-type">GetSuggestedGroupsCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in clients/client/src/GroupService.ts:325</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Returns a list of suggested groups.</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>args: <a href="../interfaces/getsuggestedgroupscommandinput.html" class="tsd-signature-type">GetSuggestedGroupsCommandInput</a></h5>
-							</li>
-							<li>
-								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getsuggestedgroupscommandoutput.html" class="tsd-signature-type">GetSuggestedGroupsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getsuggestedgroupscommandoutput.html" class="tsd-signature-type">GetSuggestedGroupsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>err: <span class="tsd-signature-type">any</span></h5>
-													</li>
-													<li>
-														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/getsuggestedgroupscommandoutput.html" class="tsd-signature-type">GetSuggestedGroupsCommandOutput</a></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in clients/client/src/GroupService.ts:329</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Returns a list of suggested groups.</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>args: <a href="../interfaces/getsuggestedgroupscommandinput.html" class="tsd-signature-type">GetSuggestedGroupsCommandInput</a></h5>
-							</li>
-							<li>
-								<h5>options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
-							</li>
-							<li>
-								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getsuggestedgroupscommandoutput.html" class="tsd-signature-type">GetSuggestedGroupsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getsuggestedgroupscommandoutput.html" class="tsd-signature-type">GetSuggestedGroupsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>err: <span class="tsd-signature-type">any</span></h5>
-													</li>
-													<li>
-														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/getsuggestedgroupscommandoutput.html" class="tsd-signature-type">GetSuggestedGroupsCommandOutput</a></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 				<a name="joingroup" class="tsd-anchor"></a>
 				<h3>join<wbr>Group</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -1248,7 +1126,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/GroupService.ts:354</li>
+								<li>Defined in clients/client/src/GroupService.ts:321</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1265,7 +1143,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/GroupService.ts:358</li>
+								<li>Defined in clients/client/src/GroupService.ts:325</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1303,7 +1181,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/GroupService.ts:362</li>
+								<li>Defined in clients/client/src/GroupService.ts:329</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1355,7 +1233,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/GroupService.ts:387</li>
+								<li>Defined in clients/client/src/GroupService.ts:354</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1377,7 +1255,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/GroupService.ts:391</li>
+								<li>Defined in clients/client/src/GroupService.ts:358</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1420,7 +1298,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/GroupService.ts:395</li>
+								<li>Defined in clients/client/src/GroupService.ts:362</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1452,6 +1330,128 @@
 													</li>
 													<li>
 														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/leavegroupcommandoutput.html" class="tsd-signature-type">LeaveGroupCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="listsuggestedgroups" class="tsd-anchor"></a>
+				<h3>list<wbr>Suggested<wbr>Groups</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">list<wbr>Suggested<wbr>Groups<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/listsuggestedgroupscommandinput.html" class="tsd-signature-type">ListSuggestedGroupsCommandInput</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/listsuggestedgroupscommandoutput.html" class="tsd-signature-type">ListSuggestedGroupsCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">list<wbr>Suggested<wbr>Groups<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/listsuggestedgroupscommandinput.html" class="tsd-signature-type">ListSuggestedGroupsCommandInput</a>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/listsuggestedgroupscommandoutput.html" class="tsd-signature-type">ListSuggestedGroupsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">list<wbr>Suggested<wbr>Groups<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/listsuggestedgroupscommandinput.html" class="tsd-signature-type">ListSuggestedGroupsCommandInput</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/listsuggestedgroupscommandoutput.html" class="tsd-signature-type">ListSuggestedGroupsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in clients/client/src/GroupService.ts:387</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns a list of suggested groups.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <a href="../interfaces/listsuggestedgroupscommandinput.html" class="tsd-signature-type">ListSuggestedGroupsCommandInput</a></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/listsuggestedgroupscommandoutput.html" class="tsd-signature-type">ListSuggestedGroupsCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in clients/client/src/GroupService.ts:391</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns a list of suggested groups.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <a href="../interfaces/listsuggestedgroupscommandinput.html" class="tsd-signature-type">ListSuggestedGroupsCommandInput</a></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/listsuggestedgroupscommandoutput.html" class="tsd-signature-type">ListSuggestedGroupsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/listsuggestedgroupscommandoutput.html" class="tsd-signature-type">ListSuggestedGroupsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/listsuggestedgroupscommandoutput.html" class="tsd-signature-type">ListSuggestedGroupsCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in clients/client/src/GroupService.ts:395</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns a list of suggested groups.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <a href="../interfaces/listsuggestedgroupscommandinput.html" class="tsd-signature-type">ListSuggestedGroupsCommandInput</a></h5>
+							</li>
+							<li>
+								<h5>options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/listsuggestedgroupscommandoutput.html" class="tsd-signature-type">ListSuggestedGroupsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/listsuggestedgroupscommandoutput.html" class="tsd-signature-type">ListSuggestedGroupsCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/listsuggestedgroupscommandoutput.html" class="tsd-signature-type">ListSuggestedGroupsCommandOutput</a></h5>
 													</li>
 												</ul>
 												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>

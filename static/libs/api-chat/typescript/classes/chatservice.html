@@ -67,9 +67,6 @@
 					<a href="chatservice.html#getthreadhistory" class="tsd-kind-icon">get<wbr>Thread<wbr>History</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="chatservice.html#getthreadlive" class="tsd-kind-icon">get<wbr>Thread<wbr>Live</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="chatservice.html#getthreadtopic" class="tsd-kind-icon">get<wbr>Thread<wbr>Topic</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
@@ -83,6 +80,9 @@
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="chatservice.html#settypingstatus" class="tsd-kind-icon">set<wbr>Typing<wbr>Status</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="chatservice.html#watchthread" class="tsd-kind-icon">watch<wbr>Thread</a>
 				</li>
 			</ul>
 		</li>
@@ -132,12 +132,12 @@
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="chatservice.html#destroy" class="tsd-kind-icon">destroy</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="chatservice.html#getdirectthread" class="tsd-kind-icon">get<wbr>Direct<wbr>Thread</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="chatservice.html#getthreadhistory" class="tsd-kind-icon">get<wbr>Thread<wbr>History</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="chatservice.html#getthreadlive" class="tsd-kind-icon">get<wbr>Thread<wbr>Live</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="chatservice.html#getthreadtopic" class="tsd-kind-icon">get<wbr>Thread<wbr>Topic</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="chatservice.html#send" class="tsd-kind-icon">send</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="chatservice.html#sendchatmessage" class="tsd-kind-icon">send<wbr>Chat<wbr>Message</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="chatservice.html#setthreadread" class="tsd-kind-icon">set<wbr>Thread<wbr>Read</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="chatservice.html#settypingstatus" class="tsd-kind-icon">set<wbr>Typing<wbr>Status</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="chatservice.html#watchthread" class="tsd-kind-icon">watch<wbr>Thread</a></li>
 						</ul>
 					</section>
 				</div>
@@ -478,131 +478,6 @@
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="getthreadlive" class="tsd-anchor"></a>
-				<h3>get<wbr>Thread<wbr>Live</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Thread<wbr>Live<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/getthreadlivecommandinput.html" class="tsd-signature-type">GetThreadLiveCommandInput</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/getthreadlivecommandoutput.html" class="tsd-signature-type">GetThreadLiveCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></li>
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Thread<wbr>Live<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/getthreadlivecommandinput.html" class="tsd-signature-type">GetThreadLiveCommandInput</a>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getthreadlivecommandoutput.html" class="tsd-signature-type">GetThreadLiveCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Thread<wbr>Live<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/getthreadlivecommandinput.html" class="tsd-signature-type">GetThreadLiveCommandInput</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getthreadlivecommandoutput.html" class="tsd-signature-type">GetThreadLiveCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in clients/client/src/ChatService.ts:113</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Fetches all relevant changes from a thread that have happened since the
-								given watch index.</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>args: <a href="../interfaces/getthreadlivecommandinput.html" class="tsd-signature-type">GetThreadLiveCommandInput</a></h5>
-							</li>
-							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/getthreadlivecommandoutput.html" class="tsd-signature-type">GetThreadLiveCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in clients/client/src/ChatService.ts:117</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Fetches all relevant changes from a thread that have happened since the
-								given watch index.</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>args: <a href="../interfaces/getthreadlivecommandinput.html" class="tsd-signature-type">GetThreadLiveCommandInput</a></h5>
-							</li>
-							<li>
-								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getthreadlivecommandoutput.html" class="tsd-signature-type">GetThreadLiveCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getthreadlivecommandoutput.html" class="tsd-signature-type">GetThreadLiveCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>err: <span class="tsd-signature-type">any</span></h5>
-													</li>
-													<li>
-														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/getthreadlivecommandoutput.html" class="tsd-signature-type">GetThreadLiveCommandOutput</a></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in clients/client/src/ChatService.ts:121</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Fetches all relevant changes from a thread that have happened since the
-								given watch index.</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>args: <a href="../interfaces/getthreadlivecommandinput.html" class="tsd-signature-type">GetThreadLiveCommandInput</a></h5>
-							</li>
-							<li>
-								<h5>options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
-							</li>
-							<li>
-								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getthreadlivecommandoutput.html" class="tsd-signature-type">GetThreadLiveCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getthreadlivecommandoutput.html" class="tsd-signature-type">GetThreadLiveCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>err: <span class="tsd-signature-type">any</span></h5>
-													</li>
-													<li>
-														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/getthreadlivecommandoutput.html" class="tsd-signature-type">GetThreadLiveCommandOutput</a></h5>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 				<a name="getthreadtopic" class="tsd-anchor"></a>
 				<h3>get<wbr>Thread<wbr>Topic</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -614,7 +489,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/ChatService.ts:146</li>
+								<li>Defined in clients/client/src/ChatService.ts:112</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -636,7 +511,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/ChatService.ts:150</li>
+								<li>Defined in clients/client/src/ChatService.ts:116</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -679,7 +554,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/ChatService.ts:154</li>
+								<li>Defined in clients/client/src/ChatService.ts:120</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -873,7 +748,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/ChatService.ts:179</li>
+								<li>Defined in clients/client/src/ChatService.ts:145</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -895,7 +770,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/ChatService.ts:183</li>
+								<li>Defined in clients/client/src/ChatService.ts:149</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -938,7 +813,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/ChatService.ts:187</li>
+								<li>Defined in clients/client/src/ChatService.ts:153</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -995,7 +870,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/ChatService.ts:212</li>
+								<li>Defined in clients/client/src/ChatService.ts:178</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1017,7 +892,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/ChatService.ts:216</li>
+								<li>Defined in clients/client/src/ChatService.ts:182</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1060,7 +935,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/ChatService.ts:220</li>
+								<li>Defined in clients/client/src/ChatService.ts:186</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1117,7 +992,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/ChatService.ts:245</li>
+								<li>Defined in clients/client/src/ChatService.ts:211</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1139,7 +1014,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/ChatService.ts:249</li>
+								<li>Defined in clients/client/src/ChatService.ts:215</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1182,7 +1057,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/client/src/ChatService.ts:253</li>
+								<li>Defined in clients/client/src/ChatService.ts:219</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1214,6 +1089,131 @@
 													</li>
 													<li>
 														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/settypingstatuscommandoutput.html" class="tsd-signature-type">SetTypingStatusCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="watchthread" class="tsd-anchor"></a>
+				<h3>watch<wbr>Thread</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">watch<wbr>Thread<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/watchthreadcommandinput.html" class="tsd-signature-type">WatchThreadCommandInput</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">__HttpHandlerOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/watchthreadcommandoutput.html" class="tsd-signature-type">WatchThreadCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">watch<wbr>Thread<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/watchthreadcommandinput.html" class="tsd-signature-type">WatchThreadCommandInput</a>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/watchthreadcommandoutput.html" class="tsd-signature-type">WatchThreadCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">watch<wbr>Thread<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/watchthreadcommandinput.html" class="tsd-signature-type">WatchThreadCommandInput</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">__HttpHandlerOptions</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/watchthreadcommandoutput.html" class="tsd-signature-type">WatchThreadCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in clients/client/src/ChatService.ts:245</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Fetches all relevant changes from a thread that have happened since the
+								given watch index.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <a href="../interfaces/watchthreadcommandinput.html" class="tsd-signature-type">WatchThreadCommandInput</a></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/watchthreadcommandoutput.html" class="tsd-signature-type">WatchThreadCommandOutput</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in clients/client/src/ChatService.ts:249</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Fetches all relevant changes from a thread that have happened since the
+								given watch index.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <a href="../interfaces/watchthreadcommandinput.html" class="tsd-signature-type">WatchThreadCommandInput</a></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/watchthreadcommandoutput.html" class="tsd-signature-type">WatchThreadCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/watchthreadcommandoutput.html" class="tsd-signature-type">WatchThreadCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/watchthreadcommandoutput.html" class="tsd-signature-type">WatchThreadCommandOutput</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in clients/client/src/ChatService.ts:253</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Fetches all relevant changes from a thread that have happened since the
+								given watch index.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>args: <a href="../interfaces/watchthreadcommandinput.html" class="tsd-signature-type">WatchThreadCommandInput</a></h5>
+							</li>
+							<li>
+								<h5>options: <span class="tsd-signature-type">__HttpHandlerOptions</span></h5>
+							</li>
+							<li>
+								<h5>cb: <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/watchthreadcommandoutput.html" class="tsd-signature-type">WatchThreadCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, data<span class="tsd-signature-symbol">?: </span><a href="../interfaces/watchthreadcommandoutput.html" class="tsd-signature-type">WatchThreadCommandOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>err: <span class="tsd-signature-type">any</span></h5>
+													</li>
+													<li>
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <a href="../interfaces/watchthreadcommandoutput.html" class="tsd-signature-type">WatchThreadCommandOutput</a></h5>
 													</li>
 												</ul>
 												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>

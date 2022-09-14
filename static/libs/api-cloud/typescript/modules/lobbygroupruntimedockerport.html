@@ -49,6 +49,9 @@
 			<a href="lobbygroupruntimedockerport.html#label" class="tsd-kind-icon">label</a>
 		</li>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
+			<a href="lobbygroupruntimedockerport.html#portrange" class="tsd-kind-icon">port<wbr>Range</a>
+		</li>
+		<li class=" tsd-kind-property tsd-parent-kind-namespace">
 			<a href="lobbygroupruntimedockerport.html#proxyprotocol" class="tsd-kind-icon">proxy<wbr>Protocol</a>
 		</li>
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
@@ -73,6 +76,7 @@
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="lobbygroupruntimedockerport.html#label" class="tsd-kind-icon">label</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="lobbygroupruntimedockerport.html#portrange" class="tsd-kind-icon">port<wbr>Range</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="lobbygroupruntimedockerport.html#proxyprotocol" class="tsd-kind-icon">proxy<wbr>Protocol</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="lobbygroupruntimedockerport.html#targetport" class="tsd-kind-icon">target<wbr>Port</a></li>
 						</ul>
@@ -88,7 +92,7 @@
 				<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1286</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1311</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -98,12 +102,27 @@
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
+				<a name="portrange" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> port<wbr>Range</h3>
+				<div class="tsd-signature tsd-kind-icon">port<wbr>Range<span class="tsd-signature-symbol">:</span> <a href="portrange.html" class="tsd-signature-type">PortRange</a></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in clients/client/src/models/models_0.ts:1321</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The port range to connect to for UDP.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
 				<a name="proxyprotocol" class="tsd-anchor"></a>
 				<h3>proxy<wbr>Protocol</h3>
 				<div class="tsd-signature tsd-kind-icon">proxy<wbr>Protocol<span class="tsd-signature-symbol">:</span> <a href="../enums/proxyprotocol.html" class="tsd-signature-type">ProxyProtocol</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1296</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1326</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -114,16 +133,16 @@
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
 				<a name="targetport" class="tsd-anchor"></a>
-				<h3>target<wbr>Port</h3>
-				<div class="tsd-signature tsd-kind-icon">target<wbr>Port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> target<wbr>Port</h3>
+				<div class="tsd-signature tsd-kind-icon">target<wbr>Port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1291</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1316</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The port number of this docker port.</p>
+						<p>The port number to connect to.</p>
 					</div>
 				</div>
 			</section>

@@ -57,6 +57,9 @@
 		<li class=" tsd-kind-property tsd-parent-kind-namespace">
 			<a href="matchmakerlobbyjoininfoport.html#port" class="tsd-kind-icon">port</a>
 		</li>
+		<li class=" tsd-kind-property tsd-parent-kind-namespace">
+			<a href="matchmakerlobbyjoininfoport.html#portrange" class="tsd-kind-icon">port<wbr>Range</a>
+		</li>
 	</ul>
 </nav>
 <div class="container container-main">
@@ -80,6 +83,7 @@
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="matchmakerlobbyjoininfoport.html#hostname" class="tsd-kind-icon">hostname</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="matchmakerlobbyjoininfoport.html#istls" class="tsd-kind-icon">is<wbr>Tls</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="matchmakerlobbyjoininfoport.html#port" class="tsd-kind-icon">port</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="matchmakerlobbyjoininfoport.html#portrange" class="tsd-kind-icon">port<wbr>Range</a></li>
 						</ul>
 					</section>
 				</div>
@@ -89,16 +93,17 @@
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
 				<a name="host" class="tsd-anchor"></a>
-				<h3>host</h3>
-				<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> host</h3>
+				<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1431</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1891</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The host URL for the given port.</p>
+						<p>The host for the given port.
+						Will be null if using a port range.</p>
 					</div>
 				</div>
 			</section>
@@ -108,7 +113,7 @@
 				<div class="tsd-signature tsd-kind-icon">hostname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1436</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1896</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -123,7 +128,7 @@
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Tls<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1448</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1915</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -135,16 +140,32 @@
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
 				<a name="port" class="tsd-anchor"></a>
-				<h3>port</h3>
-				<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> port</h3>
+				<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:1441</li>
+						<li>Defined in clients/client/src/models/models_0.ts:1903</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The port number for this lobby.</p>
+						<p>The port number for this lobby.
+						Will be null if using a port range.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
+				<a name="portrange" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> port<wbr>Range</h3>
+				<div class="tsd-signature tsd-kind-icon">port<wbr>Range<span class="tsd-signature-symbol">:</span> <a href="matchmakerlobbyjoininfoportrange.html" class="tsd-signature-type">MatchmakerLobbyJoinInfoPortRange</a></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in clients/client/src/models/models_0.ts:1908</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The port range for this lobby.</p>
 					</div>
 				</div>
 			</section>
