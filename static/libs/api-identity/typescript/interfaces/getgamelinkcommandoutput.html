@@ -52,10 +52,19 @@
 					<a href="getgamelinkcommandoutput.html#_metadata" class="tsd-kind-icon">$metadata</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a href="getgamelinkcommandoutput.html#currentidentity" class="tsd-kind-icon">current<wbr>Identity</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a href="getgamelinkcommandoutput.html#game" class="tsd-kind-icon">game</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a href="getgamelinkcommandoutput.html#newidentity" class="tsd-kind-icon">new<wbr>Identity</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a href="getgamelinkcommandoutput.html#status" class="tsd-kind-icon">status</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a href="getgamelinkcommandoutput.html#watch" class="tsd-kind-icon">watch</a>
 				</li>
 			</ul>
 		</li>
@@ -87,8 +96,11 @@
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="getgamelinkcommandoutput.html#_metadata" class="tsd-kind-icon">$metadata</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="getgamelinkcommandoutput.html#currentidentity" class="tsd-kind-icon">current<wbr>Identity</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="getgamelinkcommandoutput.html#game" class="tsd-kind-icon">game</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="getgamelinkcommandoutput.html#newidentity" class="tsd-kind-icon">new<wbr>Identity</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="getgamelinkcommandoutput.html#status" class="tsd-kind-icon">status</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="getgamelinkcommandoutput.html#watch" class="tsd-kind-icon">watch</a></li>
 						</ul>
 					</section>
 				</div>
@@ -113,18 +125,51 @@
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<a name="currentidentity" class="tsd-anchor"></a>
+				<h3>current<wbr>Identity</h3>
+				<div class="tsd-signature tsd-kind-icon">current<wbr>Identity<span class="tsd-signature-symbol">:</span> <a href="../modules/identityhandle.html" class="tsd-signature-type">IdentityHandle</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+				<aside class="tsd-sources">
+					<p>Inherited from <a href="../modules/getgamelinkoutput.html">GetGameLinkOutput</a>.<a href="../modules/getgamelinkoutput.html#currentidentity">currentIdentity</a></p>
+					<ul>
+						<li>Defined in clients/client/src/models/models_0.ts:2989</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The current game user identity which created this game link.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 				<a name="game" class="tsd-anchor"></a>
 				<h3>game</h3>
 				<div class="tsd-signature tsd-kind-icon">game<span class="tsd-signature-symbol">:</span> <a href="../modules/gamehandle.html" class="tsd-signature-type">GameHandle</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="../modules/getgamelinkoutput.html">GetGameLinkOutput</a>.<a href="../modules/getgamelinkoutput.html#game">game</a></p>
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:2356</li>
+						<li>Defined in clients/client/src/models/models_0.ts:2984</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>A game handle.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<a name="newidentity" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> new<wbr>Identity</h3>
+				<div class="tsd-signature tsd-kind-icon">new<wbr>Identity<span class="tsd-signature-symbol">:</span> <a href="../modules/getgamelinknewidentity.html" class="tsd-signature-type">GetGameLinkNewIdentity</a></div>
+				<aside class="tsd-sources">
+					<p>Inherited from <a href="../modules/getgamelinkoutput.html">GetGameLinkOutput</a>.<a href="../modules/getgamelinkoutput.html#newidentity">newIdentity</a></p>
+					<ul>
+						<li>Defined in clients/client/src/models/models_0.ts:2995</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>If <code>status</code> is <code>GameLinkStatus$COMPLETE</code>, this will return the new
+						identity and identity token to use for all future requests.</p>
 					</div>
 				</div>
 			</section>
@@ -135,12 +180,28 @@
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="../modules/getgamelinkoutput.html">GetGameLinkOutput</a>.<a href="../modules/getgamelinkoutput.html#status">status</a></p>
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:2351</li>
+						<li>Defined in clients/client/src/models/models_0.ts:2979</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>The link status between an identity and a game user.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<a name="watch" class="tsd-anchor"></a>
+				<h3>watch</h3>
+				<div class="tsd-signature tsd-kind-icon">watch<span class="tsd-signature-symbol">:</span> <a href="../modules/watchresponse.html" class="tsd-signature-type">WatchResponse</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+				<aside class="tsd-sources">
+					<p>Inherited from <a href="../modules/getgamelinkoutput.html">GetGameLinkOutput</a>.<a href="../modules/getgamelinkoutput.html#watch">watch</a></p>
+					<ul>
+						<li>Defined in clients/client/src/models/models_0.ts:3000</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Provided by watchable endpoints used in blocking loops.</p>
 					</div>
 				</div>
 			</section>

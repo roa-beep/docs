@@ -55,6 +55,12 @@
 			<a href="globaleventkind.chatreadmember.html" class="tsd-kind-icon">Chat<wbr>Read<wbr>Member</a>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+			<a href="globaleventkind.chatthreadremovemember.html" class="tsd-kind-icon">Chat<wbr>Thread<wbr>Remove<wbr>Member</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+			<a href="globaleventkind.identityupdatemember.html" class="tsd-kind-icon">Identity<wbr>Update<wbr>Member</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-namespace">
 			<a href="globaleventkind.matchmakerlobbyjoinmember.html" class="tsd-kind-icon">Matchmaker<wbr>Lobby<wbr>Join<wbr>Member</a>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-namespace">
@@ -71,6 +77,12 @@
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="globaleventkind.visitor.html#chatread" class="tsd-kind-icon">chat<wbr>Read</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="globaleventkind.visitor.html#chatthreadremove" class="tsd-kind-icon">chat<wbr>Thread<wbr>Remove</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="globaleventkind.visitor.html#identityupdate" class="tsd-kind-icon">identity<wbr>Update</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="globaleventkind.visitor.html#matchmakerlobbyjoin" class="tsd-kind-icon">matchmaker<wbr>Lobby<wbr>Join</a>
@@ -113,6 +125,8 @@
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="globaleventkind.visitor.html#_" class="tsd-kind-icon">_</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="globaleventkind.visitor.html#chatmessage" class="tsd-kind-icon">chat<wbr>Message</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="globaleventkind.visitor.html#chatread" class="tsd-kind-icon">chat<wbr>Read</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="globaleventkind.visitor.html#chatthreadremove" class="tsd-kind-icon">chat<wbr>Thread<wbr>Remove</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="globaleventkind.visitor.html#identityupdate" class="tsd-kind-icon">identity<wbr>Update</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="globaleventkind.visitor.html#matchmakerlobbyjoin" class="tsd-kind-icon">matchmaker<wbr>Lobby<wbr>Join</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="globaleventkind.visitor.html#partyupdate" class="tsd-kind-icon">party<wbr>Update</a></li>
 						</ul>
@@ -128,7 +142,7 @@
 				<div class="tsd-signature tsd-kind-icon">_<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:2127</li>
+						<li>Defined in clients/client/src/models/models_0.ts:2710</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -162,7 +176,7 @@
 				<div class="tsd-signature tsd-kind-icon">chat<wbr>Message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/globaleventchatmessage.html" class="tsd-signature-type">GlobalEventChatMessage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:2123</li>
+						<li>Defined in clients/client/src/models/models_0.ts:2704</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -193,7 +207,7 @@
 				<div class="tsd-signature tsd-kind-icon">chat<wbr>Read<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/globaleventchatread.html" class="tsd-signature-type">GlobalEventChatRead</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:2124</li>
+						<li>Defined in clients/client/src/models/models_0.ts:2705</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -219,12 +233,74 @@
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="chatthreadremove" class="tsd-anchor"></a>
+				<h3>chat<wbr>Thread<wbr>Remove</h3>
+				<div class="tsd-signature tsd-kind-icon">chat<wbr>Thread<wbr>Remove<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/globaleventchatthreadremove.html" class="tsd-signature-type">GlobalEventChatThreadRemove</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in clients/client/src/models/models_0.ts:2709</li>
+					</ul>
+				</aside>
+				<div class="tsd-type-declaration">
+					<h4>Type declaration</h4>
+					<ul class="tsd-parameters">
+						<li class="tsd-parameter-signature">
+							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/globaleventchatthreadremove.html" class="tsd-signature-type">GlobalEventChatThreadRemove</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+							</ul>
+							<ul class="tsd-descriptions">
+								<li class="tsd-description">
+									<h4 class="tsd-parameters-title">Parameters</h4>
+									<ul class="tsd-parameters">
+										<li>
+											<h5>value: <a href="../modules/globaleventchatthreadremove.html" class="tsd-signature-type">GlobalEventChatThreadRemove</a></h5>
+										</li>
+									</ul>
+									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="identityupdate" class="tsd-anchor"></a>
+				<h3>identity<wbr>Update</h3>
+				<div class="tsd-signature tsd-kind-icon">identity<wbr>Update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/globaleventidentityupdate.html" class="tsd-signature-type">GlobalEventIdentityUpdate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in clients/client/src/models/models_0.ts:2707</li>
+					</ul>
+				</aside>
+				<div class="tsd-type-declaration">
+					<h4>Type declaration</h4>
+					<ul class="tsd-parameters">
+						<li class="tsd-parameter-signature">
+							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/globaleventidentityupdate.html" class="tsd-signature-type">GlobalEventIdentityUpdate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+							</ul>
+							<ul class="tsd-descriptions">
+								<li class="tsd-description">
+									<h4 class="tsd-parameters-title">Parameters</h4>
+									<ul class="tsd-parameters">
+										<li>
+											<h5>value: <a href="../modules/globaleventidentityupdate.html" class="tsd-signature-type">GlobalEventIdentityUpdate</a></h5>
+										</li>
+									</ul>
+									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="matchmakerlobbyjoin" class="tsd-anchor"></a>
 				<h3>matchmaker<wbr>Lobby<wbr>Join</h3>
 				<div class="tsd-signature tsd-kind-icon">matchmaker<wbr>Lobby<wbr>Join<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/globaleventmatchmakerlobbyjoin.html" class="tsd-signature-type">GlobalEventMatchmakerLobbyJoin</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:2126</li>
+						<li>Defined in clients/client/src/models/models_0.ts:2708</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -255,7 +331,7 @@
 				<div class="tsd-signature tsd-kind-icon">party<wbr>Update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../modules/globaleventpartyupdate.html" class="tsd-signature-type">GlobalEventPartyUpdate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in clients/client/src/models/models_0.ts:2125</li>
+						<li>Defined in clients/client/src/models/models_0.ts:2706</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
