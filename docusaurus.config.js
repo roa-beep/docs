@@ -8,7 +8,7 @@ const mdxMermaid = require('mdx-mermaid');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 	title: 'Rivet',
-	tagline: 'Multiplayer Gaming for Everyone',
+	tagline: 'Powering the Open Metaverse',
 	url: 'https://rivet.gg',
 	baseUrl: '/',
 	onBrokenLinks: 'throw',
