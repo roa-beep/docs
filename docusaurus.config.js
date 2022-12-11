@@ -66,7 +66,15 @@ const config = {
 					...apiConfig('api-matchmaker', 'MatchmakerService')
 				}
 			}
-		]
+		],
+		[
+			"posthog-docusaurus",
+			{
+				apiKey: "phc_JSNubCbO65IO9HDPbDt2Dr64wDYBq6AM6knRFXpCfow",
+				appUrl: "https://posthog.rivet.gg",
+				enableInDevelopment: true,
+			},
+		],
 	],
 	themes: [
 		[
