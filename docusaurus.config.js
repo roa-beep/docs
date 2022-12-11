@@ -70,8 +70,8 @@ const config = {
 		[
 			"posthog-docusaurus",
 			{
-				apiKey: "phc_JSNubCbO65IO9HDPbDt2Dr64wDYBq6AM6knRFXpCfow",
-				appUrl: "https://posthog.rivet.gg",
+				apiKey: "phc_ILOLJbssm9azkQSBLzyccH1hBK6gAqxITLmuSoUJqcm",
+				appUrl: "https://ph.rivet.gg",
 				enableInDevelopment: true,
 			},
 		],
